@@ -104,9 +104,9 @@ plugins:
   - jekyll-admin
   # - jekyll/scholar
 
-scholar:
-  sort_by: year
-  use_raw_bibtex_entry: true
+# scholar:
+#   sort_by: year
+#   use_raw_bibtex_entry: true
 
 jekyll-mentions:
     base_url: https://github.com
