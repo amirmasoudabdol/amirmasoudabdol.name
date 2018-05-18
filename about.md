@@ -2,45 +2,14 @@
 title: About
 layout: page
 ---
-![Profile Image]({{ site.url }}/{{ site.picture }})
+<!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+# About Me
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+I am an applied mathematician, *remotely* a computer scientist, and recently more of a [computational scientist](https://en.wikipedia.org/wiki/Computational_scientist). For my Ph.D. thesis, I have studied and modeled biological systems at the [Computational Science Lab](https://uva.computationalscience.nl) at the University of Amsterdam. Does that make me a computational biologist? 🤔
 
-<h2>Skills</h2>
+Currently, I am working as a postdoc researcher at the [Department of Methodology and Statistics](https://www.tilburguniversity.edu/about/schools/socialsciences/organization/departments/methodology-statistics/) at the Tilburg University, in the Netherlands. I am interested in applications of Machine Learning to detect and reduce the statistical errors in psychological studies. 
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
+Besides all that mathematics, statistics, computings, biology and modelings, I am a design enthusiast. I enjoy designing, criticizing and studying Human User Interfaces either for smartphones or desktops. I love typefaces and typography. I also like to think that I am good at data visualization, so if you have an interesting dataset, challenge me please.
 
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+By the way, I'm trying to maintain a **[/now]({{ site.url }}/now)** page!
