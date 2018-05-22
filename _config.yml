@@ -8,7 +8,7 @@ description: Amir M Abdol's Personal Website
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/profile.jpg
+picture: assets/images/amirmasoudabdol_profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -53,11 +53,11 @@ medium: amirmasoudabdol
 email: i@amirmasoudabdol.name
 
 authors:
-    johndoe:
+    amirmasoudabdol:
         name: Amir M. Abdol
         bio: PostDoc Researcher in Statistics, Computational Biologist, UI/UX Enthusiast, and a Machine Learner
         external-image: false
-        picture: assets/images/profile.jpg
+        picture: assets/images/amirmasoudabdol_profile.jpg
         twitter: amirmasoudabdol
     
 # do you want a larger site? change the option below
