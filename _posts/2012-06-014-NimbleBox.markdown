@@ -1,7 +1,7 @@
 ---
 title: "NimbleBox"
 layout: post
-date: 2017-12-26 20:00
+date: 2012-06-14
 category: project
 image: /assets/projects/nimblebox/NimbleBox_Evernote_Logo.png
 headerImage: true
