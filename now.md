@@ -9,10 +9,14 @@ I’m currently **living** in the beautiful city of Amsterdam, the Netherlands. 
 
 Besides my work, I’m **interested** in iOS and macOS apps, and I occasionally **write** about them, check [/u/amirmasoudabdol](https://reddit.com/u/amirmasoudabdol) and [@amirmasoudabdol](https://medium.com/@amirmasoudabdol). As a hobby, I’m occasionally **playing** video games, mainly *[Heroes of the Storm](https://heroesofthestorm.com/en-us/)* these days.
 
-I've recently **finished** the book, [*Visualize This* by *Nathan Yau*](https://itunes.apple.com/nl/book/visualize-this/id443979379?at=1000l3&ct=ama&l=en&mt=11). I enjoyed reading the book as it introduces fundamentals of the data visualization and design. Inspired by what I've learned from the book, I've started a small project in which I'd like to improve plots and figures that I see in publications. Read more about it [here]({{ site.url }}/visualization-project-a-better-plot), and check the first post [here]({{ site.url }}/likelihood-of-finding-null-effects-over-time).
+---
 
-Next, I would like to learn more about the data visualization and [Generative Art](https://en.wikipedia.org/wiki/Generative_art); so, I would like to invest some time in refreshing my knowledge of [Processing](http://processing.org).
+After months of anxiety and stress, I think I'm feeling rather better these days. I'm talking to my therapist regularly. Besides his help on how to deal with anxiety, I'm learning a great deal about how the brain works, how to live, how to learn.
 
-**Updated:** July, 2018.
+I've recently finished "[Reasons to Stay Alive](https://geo.itunes.apple.com/gb/book/reasons-to-stay-alive/id914514684?mt=11&at=1000l3&ct=now)" by Matt Haig. The book is a nice biography of the writer himself. The anxiety, depression and panic attacks that he went through. For me, the take away from the book was the fact that many more people are dealing with these issues. This makes me feel understood and calms me down. Matt has published a follow up to his book called "[Notes on a Nervous Planet](https://geo.itunes.apple.com/gb/book/notes-on-a-nervous-planet/id1331460026?mt=11&at=1000l3&ct=now)" and it's already in my reading list.
+
+I didn't have time, or maybe not motivated enough, to pursue the Processing and Creative Coding. However, I'm managed to read some about Object Oriented Design Patterns. I enjoy reading the "[Design Patterns. Elements of Reusable Object-Oriented Software](https://geo.itunes.apple.com/gb/book/design-patterns-elements-reusable-object-oriented-software/id401430102?mt=11&at=1000l3&ct=now)" for now, and I think I'll be busy with it for a few months.
+
+**Updated:** Oct, 2018.
 
 <div align="right"><a style="font-size:small;" href="https://github.com/amirmasoudabdol/amirmasoudabdol.name/blob/gh-pages/now.md">Check the history of this page</a></div>
