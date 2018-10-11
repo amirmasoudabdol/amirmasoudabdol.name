@@ -9,7 +9,7 @@ I’m currently **living** in the beautiful city of Amsterdam, the Netherlands. 
 
 Besides my work, I’m **interested** in iOS and macOS apps, and I occasionally **write** about them, check [/u/amirmasoudabdol](https://reddit.com/u/amirmasoudabdol) and [@amirmasoudabdol](https://medium.com/@amirmasoudabdol). As a hobby, I’m occasionally **playing** video games, mainly *[Heroes of the Storm](https://heroesofthestorm.com/en-us/)* these days.
 
----
+<div class="breaker"></div>
 
 After months of anxiety and stress, I think I'm feeling rather better these days. I'm talking to my therapist regularly. Besides his help on how to deal with anxiety, I'm learning a great deal about how the brain works, how to live, how to learn.
 
