@@ -9,13 +9,13 @@ author: amirmasoudabdol
 
 I like data, colors, composition, design, and story-telling. Alternatively, I can say that I like *Data Visualization*. To me, data visualization is the process of *designing* — or *extracting* — a story from the data. As a good design is selective, focused — and minimal —, a good visualization is clever, simple, and discerning. It often condenses a colossal dataset into bite-size visual facts; or it tells a gentle and informative story of a common statistic. Of course there are many other types and categories but I feel this definition and examples are quite descriptive.
 
-During my [Ph.D.]({{ site.url }}/phd) project, I have tried to look at my dataset differently, clarify my results and produce nice charts and visualizations. I am quite proud of a few of them, namely, the *spatiotemporal clusters* visualization. It clearly shows the distinction between the spatial and temporal clusters, and it makes it relatively easy to track the spatial or temporal correlation of genes. In the figure below, there are 4 spatial clusters, i.e., *nodes*, and 9 temporal clusters, i.e., *edges*. Therefore, genes with similar colors are correlated both in time, and space, i.e., appearing at the same time and place in the organism, [^1].
+During my [Ph.D.]({{ site.url }}/phd) project, I have tried to look at my dataset differently, clarify my results and produce nice charts and visualizations. I am quite proud of a few of them, namely, the *spatiotemporal clusters* visualization. It clearly shows the distinction between the spatial and temporal clusters, and it makes it relatively easy to track the spatial or temporal correlation of genes. In the figure below, there are 4 spatial clusters, i.e., *nodes color*, and 9 temporal clusters, i.e., *edges color*. 
 
 ![Spatiotemporal Clusters](/assets/posts/Spatiotemporal_Clusters.png){: class="bigger-image" }
 
-![](/assets/posts/Nematostella_Patterning.png){: class="bigger-image" }
+You probably need some knowledge of biology and gene regulatory network [^1], but the main idea here is that if genes are connected to each others and are having the same colors, then are correlated both in time, and space, i.e., appearing at the same time and place in the organism.
 
-Nematostella_Patterning_Hypotheses.png
+![](/assets/posts/Nematostella_Patterning.png)
 
 --- 
 
