@@ -23,5 +23,5 @@ From the project [website](https://preferably.amirmasoudabdol.name):
 
 <div class="breaker"></div>
 
-Project website: [{preferably} - An accessible 'pkgdown' template](https://preferably.amirmasoudabdol.name)
-GitHub Repo: [amirmasoudabdol/preferably](https://github.com/amirmasoudabdol/preferably/)
+- Project website: [{preferably} - An accessible 'pkgdown' template](https://preferably.amirmasoudabdol.name)
+- GitHub Repo: [amirmasoudabdol/preferably](https://github.com/amirmasoudabdol/preferably/)

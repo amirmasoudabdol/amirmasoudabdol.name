@@ -21,5 +21,5 @@ From the project [website](https://sfthemes.amirmasoudabdol.name):
 
 <div class="breaker"></div>
 
-Project website: [{sfthemes} - An accessible 'pkgdown' template](https://sfthemes.amirmasoudabdol.name)
-GitHub Repo: [amirmasoudabdol/sfthemes](https://github.com/amirmasoudabdol/sfthemes/)
+- Project website: [{sfthemes} - An accessible 'pkgdown' template](https://sfthemes.amirmasoudabdol.name)
+- GitHub Repo: [amirmasoudabdol/sfthemes](https://github.com/amirmasoudabdol/sfthemes/)
