@@ -1,5 +1,5 @@
 ---
-title: "{preferably}"
+title: "Preferably"
 layout: post
 date: 2020-12-20
 category: project

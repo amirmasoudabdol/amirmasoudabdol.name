@@ -1,5 +1,5 @@
 ---
-title: "{sfthemes}"
+title: "San Francisco Themes"
 layout: post
 date: 2020-12-26
 category: project
