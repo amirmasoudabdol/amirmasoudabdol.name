@@ -48,5 +48,10 @@ layout: compress
         {% include analytics-google.html %}
     {% endif %}
 
+    {% if site.plausible %}
+        <script async defer data-domain="{{site.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
+    {% endif %}
+
+
 </body>
 </html>
