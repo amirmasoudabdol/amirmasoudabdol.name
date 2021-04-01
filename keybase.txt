@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/amirmasoudabdol
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://amirmasoudabdol.name
+  * I am amirmasoudabdol (https://keybase.io/amirmasoudabdol) on keybase.
+  * I have a public key with fingerprint 9ED9 378E EC7B DE99 30B9  17F4 B687 5E7E 3688 939C
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010126685d83f918ce2c8243f2aef579062c8f317e2763ad709e7438eb06ca1e18a10a",
+      "fingerprint": "9ed9378eec7bde9930b917f4b6875e7e3688939c",
+      "host": "keybase.io",
+      "key_id": "b6875e7e3688939c",
+      "kid": "010126685d83f918ce2c8243f2aef579062c8f317e2763ad709e7438eb06ca1e18a10a",
+      "uid": "3ad353c2321237c49de2010551b06c00",
+      "username": "amirmasoudabdol"
+    },
+    "merkle_root": {
+      "ctime": 1617266990,
+      "hash_meta": "55e9a15209ea2621748c15d195a778bed7adb1d4d5f9d8b5f829829d5f1d6f33",
+      "seqno": 19522130
+    },
+    "revoke": {
+      "sig_ids": [
+        "7d7660eb9014301944c02352ea0788d0a54ca236fbe870fdb17b39b47e2b644f0f"
+      ]
+    },
+    "service": {
+      "hostname": "amirmasoudabdol.name",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1617267029,
+  "expire_in": 157680000,
+  "prev": "255580a0dabe2e74f1dc67d6ce71304d65bd5af69d94365a1465fe17e2ad7a5f",
+  "seqno": 25,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMK9AnicrVNtiBVVGL5ba+aWbGHgj8JsDPXH5d7zMefrLmxlhqaIkqtkWnfPzHln
+d/buvXOdmb21rkuU7vZB0A+LSJIi0l3BRCQCw0yvkpIW/kkMCYOiIlQ2WsuiojOX
+IgJ/NhwY3sPzPs9znvOeE7NvzHW07To0cO2Hufc+0na6OT6U64UX1o04XmSGndKI
+U4HWDwYNJGm5Ehqn5CCMMOFcMiNpoLD0gfiSuDQgGgImFOK2DigWQASn2gikQLhU
+goe4rzFgqTHSTt4JwlofxPU4rKWWVoFRVEgAX3gGlKLIU1gErselYCCAcikVVb5t
+7I+SrMOa83QChTCye7Yot+xdB/8/+x5q0VkEZdQnlGBChe8qA8RKMIYzPEIZMIG4
+pqtg0boaxlWdRENGeyYadEbzThXiyiCU4yhKs4z9NMyQmGNhXSqF7Dl10l+uQqot
+AWOgNGbEmtKEEyxc6WNmsGJaCOmBEdp42LiGBcpIjwWSKLtsiQ0PKLV2Ethci6yC
+YoRgiqyFGBpRBTL1JOyz8SVOaaMjjOAcgacQdinCynV9RCgjoJGQ0iDNXF8TygMP
+pECBVRUeVZ5rc/O46wYocB4fzdTiRui3yLP7un4OhdZ23qnHURr5NpeS05+m9aSU
+BZQO17OWJ8Er/01W9sKasVNjOxoQJ2FUs8exyP9kJxBReQeeqocxlMMMwQSXyH6Z
+DjQsJWGMSaSRNQHEXrLNyOfCcB+EDcY1nHmG6YAro1zKmcYuZwFkk2HHQrPg3zAJ
+sz51n+W0CdZ0OhSDM9o8uqk919aRu2nGDfY5rc91zLrtn0eWXzDzz3vmn36sq/Db
+wEOTx0+MDU/cPRV88dnq+RtPmrd6Ji8sHnn5yuX9q/rfaa8dOsBm7pz+fXfn2NWf
+VHvx8Jbdl7avePXM+MId2zqbc7+avrD6jje/7btaPfbph2t/RvJY+b7P17w37+mJ
+Wz9ae/D2g82Hl3/c/eLN+9ZMX9w6L1df+OCR4vMn391//lSpuKiU3rKj+ElwZ+m1
+RSuWfj926uicX3at6pn4rnj/trwePvzK4JVnC110+9JvXp/sOv6BvGu8uexSbfHU
+H0vGlrjrn9jTuWzvo5Xqys1v73np/Mqey/77F69tGJnzXISCc7+u2xrP6i3v5D8+
+4345e8uMqbMPNM6pgUK+u/cMObtAd7/x9fK/ACfbg0I=
+=Ke+6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/amirmasoudabdol
+
+==================================================================

@@ -27,6 +27,8 @@ permalink: /:title/
 plausible: 
     domain: amirmasoudabdol.name
 
+include: [keybase.txt]
+
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
