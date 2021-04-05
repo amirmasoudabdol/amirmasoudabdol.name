@@ -11,6 +11,8 @@ description: An accessible 'pkgdown' template
 hidden: true # don't count this post in blog pagination
 ---
 
+# Preferably
+
 During this lockdown period with long hours of screentime every day, my eyes started to become very sensitive to white background. Luckily, these days most websites and operation systems offer [Dark Mode](https://en.wikipedia.org/wiki/Light-on-dark_color_scheme) by default. However, I realized that the documentation websites of most R packages do not support dark theme, and since I'm working with R packages every day, I had to do something about it. So, I decided to develop a template for [{pkgdown}](https://pkgdown.r-lib.org) that can take advantage of some of the modern capabalities of modern browsers.
 
 ![](https://preferably.amirmasoudabdol.name/reference/figures/comparison.png)

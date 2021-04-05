@@ -1,6 +1,6 @@
 ---
-title: Now
 layout: page
+title: Now
 ---
 
 # Now

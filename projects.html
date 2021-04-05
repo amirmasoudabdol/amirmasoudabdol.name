@@ -2,15 +2,24 @@
 layout: page
 title: Projects
 ---
-<section class="list">
+
+<h2>Projects</h2>
+
     {% for post in site.posts %}
         {% if post.projects %}
-            <div class="item {% if post.star %}star{% endif %}">
-                <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
-                </a>
+<div class="container-lg clearfix">
+            <div class="col-sm-4 col-md-4 col-lg-4 float-left p-2 border">
+            <p class="h3">
+                    <a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                        {{ post.title }}
+                    </a>
+                <p>{{ page.date | date: "%b %d %Y" }}</p>
             </div>
+            <div class="col-sm-8 col-md-8 col-lg-8 float-right p-2 border">
+                {% if post.image %}
+                    <img src="{{ post.image }}">
+                {% endif %}
+            </div>
+</div>
         {% endif %}
     {% endfor %}
-</section>
