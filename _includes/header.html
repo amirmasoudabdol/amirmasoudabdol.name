@@ -4,8 +4,22 @@
    or page.title == "Tags"
 %}{% assign showHeader = true %}{% endif %}
 
-{% if showHeader == true %}
-    <header class="header-home {% if site.animation %}animated{% endif %}">
+<!-- {% if showHeader == true %} -->
+
+<div class="d-flex flex-column flex-md-row flex-items-center flex-md-items-center">
+  <div class="col-2 d-flex flex-items-center flex-items-center flex-md-items-start">
+    <img class="width-full avatar mb-2 mb-md-0" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" alt="{{ site.name }}" />
+  </div>
+  <div class="col-12 col-md-10 d-flex flex-column flex-justify-center flex-items-center flex-md-items-start pl-md-4">
+    <h1 class="text-normal lh-condensed">{{ site.name }}</h1>
+    <p class="h4 text-gray text-normal mb-2">{{ site.bio }}</p>
+
+    <!-- {% include social-links.html %} -->
+
+  </div>
+</div>
+
+<!--     <div class="header-home {% if site.animation %}animated{% endif %}">
         {% if site.about %}
             <a class="link" href="{{ site.url }}/about">
                 <img class="selfie" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
@@ -20,7 +34,11 @@
         <h2 class="description">{{ site.bio }}</h2>
 
         {% include social-links.html %}
-    </header>
-{% endif %}
+    </div>
+{% endif %} -->
 
 {% include nav.html %}
+
+<!-- <div class="d-flex flex-column">
+  <div class="p-3"></div>
+</div> -->

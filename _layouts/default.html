@@ -13,45 +13,54 @@ layout: compress
     <meta name=author content="{{ site.name }}">
 
     {% seo %}
-    
+
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
 
-    <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
-    </style>
+    <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
 
 </head>
 <body>
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
+
+
+    <div class="container-lg clearfix border">
+
+        <div class="border d-flex flex-column">
+
+          <div class="col-10 mx-auto border">
+
+            {% if page.tag %}
+                <div class="p-0 border bg-gray-light"></div>
             {% else %}
-                <div class="{{ page.title | downcase }}">
+
+            {% if showHeader != true %}
+                <div class="p-0 border bg-gray-light"></div>
+            {% else %}
+                <div class="p-12 border bg-gray-light"></div>
             {% endif %}
-        {% endif %}
+
+            {% endif %}
+
 
             {{ content }}
         </div>
-    </div>
+      </div>
+  </div>
 
-    {% include icons.html %}
-
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
-    {% endif %}
-
-    {% if site.plausible %}
-        <script async defer data-domain="{{site.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
-    {% endif %}
+      {% include icons.html %}
 
 
-</body>
-</html>
+      {% if site.analytics-google %}
+      {% include analytics-google.html %}
+      {% endif %}
+
+      {% if site.plausible %}
+      <script async defer data-domain="{{site.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
+      {% endif %}
+
+
+  </body>
+  </html>

@@ -27,6 +27,12 @@ permalink: /:title/
 plausible: 
     domain: amirmasoudabdol.name
 
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
@@ -68,6 +74,13 @@ authors:
 # normal = 560px / large = 810px
 width: normal
 
+sass:
+  # Where you keep your scss files
+  sass_dir: assets/css/
+  # Where sass should look for other scss
+  load_paths:
+    - node_modules/
+
 # if you don't need pagination, comment the *paginate* configs below
 # paginate: 5
 # paginate_path: "blog/:num/"
@@ -106,6 +119,7 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll/scholar
+  - jekyll-octicons
 
 scholar:
   sort_by: year

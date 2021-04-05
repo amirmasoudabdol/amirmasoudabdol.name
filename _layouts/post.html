@@ -6,34 +6,51 @@ layout: page
     <img class="title-image" src="{{ page.image }}" alt="{{ page.title }}">
 {% endif %}
 
-<h1 class="title">{{ page.title }}</h1>
-
-<span class="date">
+<!-- <span class="date">
     <time datetime="{{ page.date | date:"%d-%m-%Y" }}">{{ page.date | date: "%A. %B %d, %Y" }}</time>
     {% if site.read-time %} - {% include read-time.html %}{% endif %}
-</span>
+</span> -->
+
+<!-- <div class="border d-flex flex-column"> -->
+  <!-- <div class="p-1 border bg-gray-light"></div> -->
+  {% include breadcrumbs.html omit_collection=true omit_title=true %}
+  <!-- <div class="p-3"></div> -->
+<!-- </div> -->
+
+<!-- <h1 class="title">{{ page.title }}</h1> -->
 
 {% if site.show-tags %}
-    <div class="post-tags">
+    <div class="p-1"></div>
+    <nav class="Breadcrumb float-right">
+      <ol>
         {% for tag in page.tags %}
-            <a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+            <span class="Label"><a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
         {% endfor %}
-    </div>
+      </ol>
+    </nav>
+
+    <div class="p-3"></div>
 {% endif %}
 
-{{content}}
+<!-- </div> -->
+
+<div class="markdown-body">
+  {{content}}
+</div>
 
 {% if site.post-advance-links contains page.category %}
-    <div class="blog-navigation">
+    <nav class="pagination-container" aria-label="Pagination">
+        <div class="pagination">
         {% if page.previous.url %}
-            <a class="prev" href="{{ site.url }}{{ page.previous.url }}">&laquo; {{ page.previous.title }}</a>
+            <a class="previous_page" rel="previous" aria-label="{{ page.previous.title }}" href="{{ site.url }}{{ page.previous.url }}">{{ page.previous.title }}</a>
         {% else %}
-            <a class="prev"></a>
+            <span class="previous_page" aria-disabled="false"></span>
         {% endif %}
         {% if page.next.url %}
-            <a class="next" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }} &raquo;</a>
+            <a class="next_page" rel="next" aria-label="{{ page.next.title }}" href="{{ site.url }}{{ page.next.url }}">{{ page.next.title }}</a>
         {% endif %}
-    </div>
+        </div>
+    </nav>
 {% endif %}
 
 {% if site.related %}

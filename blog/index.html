@@ -4,9 +4,9 @@
 layout: page
 title: Blog
 ---
-<section class="list">
+<section>
 	{% if site.posts.size == 0 %}
-		<p class="text-center">Nothing published yet!</p>
+		<p>Nothing published yet!</p>
 	{% elsif site.paginate %}
 		{% for post in paginator.posts %}
 			{% if post.category == 'blog' %}
