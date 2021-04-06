@@ -13,24 +13,32 @@ layout: page
 
 <!-- <div class="border d-flex flex-column"> -->
   <!-- <div class="p-1 border bg-gray-light"></div> -->
-  {% include breadcrumbs.html omit_collection=true omit_title=true %}
   <!-- <div class="p-3"></div> -->
 <!-- </div> -->
 
-<!-- <h1 class="title">{{ page.title }}</h1> -->
+<h1>{{ page.title }}</h1>
 
-{% if site.show-tags %}
-    <!-- <div class="p-1"></div> -->
-    <nav class="Breadcrumb float-right">
-      <ol>
-        {% for tag in page.tags %}
-            <span class="Label"><a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
-        {% endfor %}
-      </ol>
-    </nav>
+<div class="border d-flex flex-column flex-sm-row">
+  <div class="border bg-gray-light float-left">
+      {% include breadcrumbs.html omit_collection=true omit_title=true %}
+  </div>
+  <div class="border bg-gray-light flex-1"></div>
+  <div class="border bg-gray-light float-left">
+    {% if site.show-tags %}
+        <!-- <div class="p-1"></div> -->
+        <nav class="Breadcrumb float-left ml-n5">
+          <ol>
+            {% for tag in page.tags %}
+                <span class="Label"><a class="item" href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
+            {% endfor %}
+          </ol>
+        </nav>
 
-    <div class="p-3"></div>
-{% endif %}
+        <div class="p-3"></div>
+    {% endif %}
+  </div>
+</div>
+
 
 <!-- </div> -->
 

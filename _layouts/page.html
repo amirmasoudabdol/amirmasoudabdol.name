@@ -1,20 +1,22 @@
 ---
 layout: default
 ---
-{% include header.html %}
+<!-- {% include header.html %} -->
+
+{% include nav.html %}
 
 <div class="container-lg clearfix border">
 
   <div class="p-4 border bg-gray-light"></div>
 
-  <div class="col-10 mx-auto">
+  <div class="mx-auto">
 
     <div class="markdown-body">
       {{content}}
     </div>
 
+    {% include footer.html %}
   </div>
 
 </div>
 
-{% include footer.html %}

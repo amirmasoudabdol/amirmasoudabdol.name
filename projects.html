@@ -3,7 +3,7 @@ layout: page
 title: Projects
 ---
 
-<h2>Projects</h2>
+<h1>Projects</h1>
 
     {% for post in site.posts %}
         {% if post.projects %}
@@ -13,11 +13,12 @@ title: Projects
                     <a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                         {{ post.title }}
                     </a>
-                <p>{{ page.date | date: "%b %d %Y" }}</p>
+                <p class="lh-condensed text-small mt-n3 anim-fade-in">{{ post.date | date: "%b %d %Y" }}</p>
+                <p class="lh-condensed text-light">{{ post.description }}</p>
             </div>
             <div class="col-sm-8 col-md-8 col-lg-8 float-right p-2 border">
                 {% if post.image %}
-                    <img src="{{ post.image }}">
+                    <img class="width-fit" src="{{ post.image }}">
                 {% endif %}
             </div>
 </div>
