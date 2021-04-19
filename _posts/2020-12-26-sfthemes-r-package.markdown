@@ -2,7 +2,7 @@
 title: "San Francisco Themes"
 layout: post
 date: 2020-12-26
-category: project
+category: Projects
 image: /assets/projects/sfthemes/twitter-summary-card.png
 headerImage: false
 author: amabdol

@@ -9,8 +9,6 @@ headerImage: false
 description: A few days ago, we read an interesting paper in our bi-weekly journal club. The paper, “Likelihood of Null Effects of Large NHLBI Clinical Trials has Increased Over Time”, as its title suggests, suggests that more clinical trials are failing to find significant results.
 ---
 
-# Likelihood of Finding Null Effects over Time
-
 A few days ago, we read an interesting paper in our bi-weekly journal club. The paper, “Likelihood of Null Effects of Large NHLBI Clinical Trials has Increased Over Time” [^1], as its title suggests, suggests that more clinical trials are failing to find significant results. Researchers investigated the effect of *pre-registration* on the frequency of finding significant results in large NHLBI studies published from 1974 to 2012. Although very cautionary, they’ve concluded that most studies after 2000 ended up failing to reject the *null* hypothesis. The *Discussion* section — elegantly — listed several other possible factors responsible for this result. Fig 1. summarizes all studies subject to the meta-analysis. The plot clearly shows that after 2000, most studies failed to reject the *null* hypothesis. The visualization is on point and it clarifies the reasoning behind the aforementioned conclusion.
 
 ![Fig 1 of the Kaplan et al. 2015](/assets/posts/a-better-plot-nhlbi-fig-1.png){: class="bigger-image" }

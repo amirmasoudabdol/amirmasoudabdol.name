@@ -3,6 +3,8 @@ layout: page
 title: Now
 ---
 
+{% include breadcrumbs.html omit_collection=true omit_title=true %}
+
 # Now
 
 After almost three years of working on my simulation framework. I'm now focused on finalizing everything and writing up a paper about it. If everything goes well, I should have everything ready before the summer. I made a quite nice documentation website using [MkDocs](https://www.mkdocs.org) and [Material Theme](https://squidfunk.github.io/mkdocs-material/) that I reallt like. It looks good, and it has loads of content. I feel proud of it! 

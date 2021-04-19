@@ -2,7 +2,7 @@
 title: "NimbleBox"
 layout: post
 date: 2012-06-14
-category: project
+category: Projects
 image: /assets/projects/nimblebox/NimbleBox_Evernote_Logo.png
 headerImage: true
 author: amabdol

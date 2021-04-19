@@ -2,7 +2,7 @@
 title: "Preferably"
 layout: post
 date: 2020-12-20
-category: project
+category: Projects
 image: /assets/projects/preferably/twitter-summary-card.png
 headerImage: false
 author: amabdol
