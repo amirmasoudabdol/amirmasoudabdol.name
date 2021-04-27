@@ -97,7 +97,7 @@ projects: true
 about: true
 blog: true
 now: false
-publications: false
+publications: true
 
 # do you want to show the "read time" of the posts?
 read-time: false

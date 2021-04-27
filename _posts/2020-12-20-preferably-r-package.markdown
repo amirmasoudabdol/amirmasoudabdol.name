@@ -4,6 +4,7 @@ layout: post
 date: 2020-12-20
 category: Projects
 image: /assets/projects/preferably/twitter-summary-card.png
+logo: /assets/projects/preferably/logo.png
 headerImage: false
 author: amabdol
 projects: true

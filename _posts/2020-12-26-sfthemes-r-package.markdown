@@ -4,6 +4,7 @@ layout: post
 date: 2020-12-26
 category: Projects
 image: /assets/projects/sfthemes/twitter-summary-card.png
+logo: /assets/projects/sfthemes/logo.png
 headerImage: false
 author: amabdol
 projects: true
