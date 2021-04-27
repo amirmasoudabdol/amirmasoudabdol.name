@@ -61,7 +61,7 @@ github: amirmasoudabdol
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: amirmasoudabdol
-medium: amirmasoudabdol
+# medium: amirmasoudabdol
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: i@amirmasoudabdol.name
@@ -102,7 +102,7 @@ publications: false
 # do you want to show the "read time" of the posts?
 read-time: false
 
-dark-tint: "dark"
+dark-tint: dark_dimmed
 
 # do you want to show the "tags" inside the posts?
 show-tags: true
