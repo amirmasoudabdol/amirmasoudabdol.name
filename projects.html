@@ -3,26 +3,28 @@ layout: page
 title: Projects
 ---
 
+{% if site.breadcrumbs %}
 {% include breadcrumbs.html omit_collection=true omit_title=true %}
+{% endif %}
 
 <h1>Projects</h1>
 
-    {% for post in site.posts %}
-        {% if post.projects %}
-<div class="container-lg clearfix">
-            <div class="col-sm-4 col-md-4 col-lg-4 float-left p-2 border">
-            <p class="h3">
-                    <a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                        {{ post.title }}
-                    </a>
-                <p class="lh-condensed text-small mt-n3 anim-fade-in">{{ post.date | date: "%b %d %Y" }}</p>
-                <p class="lh-condensed text-light">{{ post.description }}</p>
-            </div>
-            <div class="col-sm-8 col-md-8 col-lg-8 float-right p-2 border">
-                {% if post.image %}
-                    <img class="width-fit" src="{{ post.image }}">
-                {% endif %}
-            </div>
-</div>
-        {% endif %}
-    {% endfor %}
+{% for post in site.posts %}
+    {% if post.projects %}
+    <div class="container-lg clearfix">
+        <div class="col-sm-4 col-md-4 col-lg-4 float-left p-2 ">
+        <p class="h3">
+            <a href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
+                {{ post.title }}
+            </a>
+            <p class="lh-condensed text-small mt-n3 anim-fade-in">{{ post.date | date: "%b %d %Y" }}</p>
+            <p class="lh-condensed text-light">{{ post.description }}</p>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8 float-right p-2 ">
+            {% if post.image %}
+            <img class="width-fit" src="{{ post.image }}">
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+{% endfor %}

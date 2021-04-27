@@ -4,7 +4,7 @@ title: About
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-{% include breadcrumbs.html omit_collection=true omit_title=true %}
+<!-- {% include breadcrumbs.html omit_collection=true omit_title=true %} -->
 
 # About Me
 

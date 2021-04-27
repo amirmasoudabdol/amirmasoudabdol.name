@@ -9,7 +9,7 @@
     <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
 
-    <html data-color-mode="auto" data-dark-theme="dark_dimmed">
+    <html data-color-mode="auto" data-dark-theme="{{ site.dark-tint }}">
 
     {% seo %}
 
@@ -20,25 +20,26 @@
 
     <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
 
+
 </head>
 <body>
 
 
 
-    <div class="container-lg clearfix border">
+    <div class="container-lg clearfix ">
 
-        <div class="border d-flex flex-column">
+        <div class=" d-flex flex-column">
 
-          <div class="col-10 mx-auto border">
+          <div class="mx-auto ">
 
             {% if page.tag %}
-                <div class="p-0 border bg-gray-light"></div>
+                <div class="p-0  bg-gray-light"></div>
             {% else %}
 
                 {% if showHeader != true %}
-                    <div class="p-0 border bg-gray-light"></div>
+                    <div class="p-0  bg-gray-light"></div>
                 {% else %}
-                    <div class="p-12 border bg-gray-light"></div>
+                    <div class="p-12  bg-gray-light"></div>
                 {% endif %}
 
             {% endif %}
@@ -49,7 +50,7 @@
       </div>
   </div>
 
-      <!-- {% include icons.html %} -->
+      {% include icons.html %}
 
 
       {% if site.analytics-google %}

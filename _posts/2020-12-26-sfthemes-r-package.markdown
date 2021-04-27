@@ -11,7 +11,7 @@ description: An accessible set of themes and color palettes for 'ggplot2'
 hidden: true # don't count this post in blog pagination
 ---
 
-# San Francisco Themes
+<!-- # San Francisco Themes -->
 
 There are many, many, many different color palettes available for {ggplot2}, and the list is growing daily. In short, {sfthemes} is technically an another set of colors and palettes that is inspired by [iOS](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/)/[macOS](https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/color/)/[watchOS](https://developer.apple.com/design/human-interface-guidelines/watchos/visual/color/) system colors. These palettes are vibrant and are designed to be easily distinguishable in differnt screen sizes and brightness settings. Moreover, they offer optimized variants for light and dark mode.
 

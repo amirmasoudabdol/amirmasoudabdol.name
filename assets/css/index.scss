@@ -11,6 +11,4 @@
 // Should you need specific files, you can easily use separate `@import`s.
 
 // Global requirements
-@import "./core/index.scss";
-@import "./product/index.scss";
-@import "./marketing/index.scss";
+@import '@primer/css/core/index.scss';
