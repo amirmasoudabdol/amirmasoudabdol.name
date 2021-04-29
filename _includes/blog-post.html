@@ -1,6 +1,15 @@
-<div class="item {% if post.star %}star{% endif %}">
-    <a class="url" href="{{ site.url }}{{ post.url }}">
-        <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-        <h3 class="title">{{ post.title }}</h3>
+<div class="container-lg clearfix">
+  <div class="col-sm-4 col-md-4 col-lg-4 float-left pt-2 pb-2 pr-2">
+
+    <p class="h3"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p>
+
+    <p class="text-small mt-n2 anim-fade-in">{{ post.date | date: "%b %d %Y" }}</p>
+  </div>
+
+  <div class="col-sm-8 col-md-8 col-lg-8 float-right pt-2 pb-2 pr-2">
+    <a class="Link--secondary no-underline muted lh-sm-condensed-ultra" href="{{ site.url }}{{ post.url }}">
+      {{ post.description }}
     </a>
+  </div>
 </div>
+  

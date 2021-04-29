@@ -1,6 +1,8 @@
 # main text of home
-name: Amir M. Abdol
-bio: PostDoc Researcher in Statistics, Computational Biologist, UI/UX Enthusiast, and a Machine Learner
+name: Hi, I'm Amir!
+
+bio-header: Hello, I'm Amir! 👋🏼 
+bio: I live in Amsterdam. I have a PhD in Computational Biology. Currently, I am a PostDoc at Tilburg University, doing statistics and other stuffs! I like science, programming, typography, and UI/UX design.
 
 # twitter summary info
 description: Amir M Abdol's Personal Website
@@ -29,6 +31,15 @@ plausible:
 
 include: [keybase.txt]
 
+markdown: kramdown
+
+breadcrumbs: false
+post-tags: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
@@ -52,7 +63,7 @@ github: amirmasoudabdol
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: amirmasoudabdol
-medium: amirmasoudabdol
+# medium: amirmasoudabdol
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: i@amirmasoudabdol.name
@@ -80,20 +91,24 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: true
-now: true
+now: false
 publications: true
 
 # do you want to show the "read time" of the posts?
 read-time: false
 
+dark-tint: dark_dimmed
+
 # do you want to show the "tags" inside the posts?
 show-tags: true
+
+show-footer: false
 
 # related posts inside a post?
 related: false
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: []
 
 # show author block at the end of a post ?
 show-author: false
@@ -108,6 +123,7 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll/scholar
+  - jekyll-octicons
 
 scholar:
   sort_by: year

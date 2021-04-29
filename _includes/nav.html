@@ -1,59 +1,43 @@
-<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
-    <ul class="list">
+<nav class="UnderlineNav UnderlineNav--right">
+    <div class="UnderlineNav-body">
         {% if page.title != "Home" %}
-            <li class="item">
-                <a class="link" href="{{ site.url }}/">Home</a>
-            </li>
+          <a class="UnderlineNav-item" href="{{ site.url }}/">Home</a>
         {% endif %}
 
         {% if site.now == true %}
             {% if page.title == "Home" %}
                {% if page.title != "Now" %}
-                    <li class="item">
-                        <a class="link" href="{{ site.url }}/now">Now</a>
-                    </li>
+                <a class="UnderlineNav-item" href="{{ site.url }}/now">Now</a>
                 {% endif %}
             {% endif %}
         {% endif %}
-        
+
         {% if site.blog == true %}
             {% if page.title != "Blog" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/blog">Blog</a>
-                </li>
+              <a class="UnderlineNav-item" href="{{ site.url }}/blog">Blog</a>
             {% endif %}
         {% endif %}
 
-
         {% if site.projects == true %}
             {% if page.title != "Projects" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/projects">Projects</a>
-                </li>
+              <a class="UnderlineNav-item" href="{{ site.url }}/projects">Projects</a>
             {% endif %}
         {% endif %}
 
         {% if site.publications == true %}
             {% if page.title != "Publications" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/publications">Publications</a>
-                </li>
+              <a class="UnderlineNav-item" href="{{ site.url }}/publications">Publications</a>
             {% endif %}
         {% endif %}
 
-
         {% if site.about == true %}
             {% if page.title != "About" %}
-                <li class="item">
-                    <a class="link" href="{{ site.url }}/about">About</a>
-                </li>
+              <a class="UnderlineNav-item" href="{{ site.url }}/about">About</a>
             {% endif %}
         {% endif %}
 
         {% if site.resume == true %}
-            <li class="item">
-                <a class="link" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
-            </li>
+          <a class="UnderlineNav-item" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
         {% endif %}
-    </ul>
+    </div>
 </nav>

@@ -1,6 +1,3 @@
----
-layout: compress
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,46 +9,58 @@ layout: compress
     <meta name=description content="{{ site.bio }}">
     <meta name=author content="{{ site.name }}">
 
+    <html data-color-mode="auto" data-dark-theme="{{ site.dark-tint }}">
+
     {% seo %}
-    
+
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
 
-    <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
-    </style>
+    <link href="https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" rel="stylesheet" />
+
 
 </head>
 <body>
 
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
+
+
+    <div class="container-lg clearfix pl-4 pr-4 col-12 col-md-10 col-lg-8 col-xl-6">
+
+        <div class=" d-flex flex-column">
+
+          <div class="mx-auto col-12">
+
+            {% if page.tag %}
+                <div class="p-0  bg-gray-light"></div>
             {% else %}
-                <div class="{{ page.title | downcase }}">
+
+                {% if showHeader != true %}
+                    <div class="p-0  bg-gray-light"></div>
+                {% else %}
+                    <div class="p-12  bg-gray-light"></div>
+                {% endif %}
+
             {% endif %}
-        {% endif %}
+
 
             {{ content }}
         </div>
-    </div>
+      </div>
+  </div>
 
-    {% include icons.html %}
-
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
-    {% endif %}
-
-    {% if site.plausible %}
-        <script async defer data-domain="{{site.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
-    {% endif %}
+      {% include icons.html %}
 
 
-</body>
-</html>
+      {% if site.analytics-google %}
+      {% include analytics-google.html %}
+      {% endif %}
+
+      {% if site.plausible %}
+      <script async defer data-domain="{{site.plausible.domain}}" src="https://plausible.io/js/plausible.js"></script>
+      {% endif %}
+
+
+  </body>
+  </html>

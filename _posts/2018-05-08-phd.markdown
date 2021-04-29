@@ -1,12 +1,13 @@
 ---
 title: "Ph.D. Thesis"
 layout: post
-category: project
+category: Projects
 projects: false
-hidden: true
+hidden: false
 author: amirmasoudabdol
 date: 2018-05-08 00:00
 headerImage: false
+tag: new
 ---
 
 ![](/assets/projects/PhD_Cover.png){: class="bigger-image"}

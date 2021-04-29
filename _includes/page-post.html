@@ -1,0 +1,15 @@
+<div class="container-lg clearfix">
+  <div class="col-sm-4 col-md-4 col-lg-4 float-left p-2 ">
+<!-- <div class="item {% if post.star %}star{% endif %}"> -->
+
+    <p class="h3"><a href="{{ site.url }}{{ post.url }}">{{ page.title }}</a></p>
+    <!-- </a> -->
+    <p>{{ page.date | date: "%b %d %Y" }}</p>
+  </div>
+  <!-- <div class="col-sm-2 col-md-2 col-lg-2"></div> -->
+  <div class="col-sm-8 col-md-8 col-lg-8 float-right p-2 ">
+    <a class="Link--secondary no-underline muted" href="{{ site.url }}{{ page.url }}">
+      {{ page.description }}
+    </a>
+  </div>
+</div>

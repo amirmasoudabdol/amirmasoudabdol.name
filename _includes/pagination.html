@@ -1,15 +1,17 @@
-<div class="pagination">
+<nav class="pagination-container" aria-label="Pagination">
+  <div class="pagination">
     {% if paginator.previous_page %}
-        <a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous">«</a>
+        <a class="previous_page" rel="previous" href="{{ site.url }}{{ paginator.previous_page_path }}">«</a>
     {% else %}
-        <span class="previous hidden">«</span>
+        <span class="previous_page" aria-disabled="true">Previous</span>
     {% endif %}
 
     <span class="page_number ">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
 
     {% if paginator.next_page %}
-        <a href="{{ site.url }}{{ paginator.next_page_path }}" class="next">»</a>
+        <a class="next_page" href="{{ site.url }}{{ paginator.next_page_path }}">»</a>
     {% else %}
-        <span class="next hidden">»</span>
+        <span class="next_page" aria-disabled="true">Next</span>
     {% endif %}
-</div>
+  </div>
+</nav>

@@ -1,7 +1,9 @@
 ---
-title: Now
 layout: page
+title: Now
 ---
+
+{% include breadcrumbs.html omit_collection=true omit_title=true %}
 
 # Now
 
