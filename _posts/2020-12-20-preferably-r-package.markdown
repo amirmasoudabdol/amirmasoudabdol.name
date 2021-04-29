@@ -1,6 +1,6 @@
 ---
 title: "Preferably"
-layout: post
+layout: project
 date: 2020-12-20
 category: Projects
 image: /assets/projects/preferably/twitter-summary-card.png

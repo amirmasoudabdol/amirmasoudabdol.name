@@ -1,6 +1,6 @@
 ---
 title: "San Francisco Themes"
-layout: post
+layout: project
 date: 2020-12-26
 category: Projects
 image: /assets/projects/sfthemes/twitter-summary-card.png
