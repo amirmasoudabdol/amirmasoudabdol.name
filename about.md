@@ -1,12 +1,12 @@
 ---
-layout: page
-title: About
+layout: post
+title: About Me
 ---
 <!-- ![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
 <!-- {% include breadcrumbs.html omit_collection=true omit_title=true %} -->
 
-# About Me
+<!-- # About Me -->
 
 I am an applied mathematician, *remotely* a computer scientist, and recently more of a [computational scientist](https://en.wikipedia.org/wiki/Computational_scientist). For my Ph.D. thesis, I have studied and modeled biological systems at the [Computational Science Lab](https://uva.computationalscience.nl) at the University of Amsterdam.
 

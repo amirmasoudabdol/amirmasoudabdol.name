@@ -18,6 +18,4 @@ You probably need some knowledge of biology and gene regulatory network [^1], bu
 
 ![](/assets/posts/Nematostella_Patterning.png)
 
----
-
 [^1]: Amir M Abdol et al. “A novel technique to combine and analyse spatial and temporal expression datasets: A case study with the sea anemone Nematostella vectensis to identify potential gene interactions”. English. In: (June 2017). DOI: [10.1016/j.ydbio. 2017.06.004](https://www.sciencedirect.com/science/article/pii/S0012160617301008?via%3Dihub).

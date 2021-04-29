@@ -13,28 +13,14 @@ layout: page
   </div>
   {% endif %}
   <div class=" bg-gray-light flex-1 flex-shrink"></div>
-  <div class=" bg-gray-light float-left">
-    {% if site.post-tags %}
-        <!-- <div class="p-1"></div> -->
-        <nav class="Breadcrumb float-left ml-n5">
-          <ol>
-            {% for tag in page.tags %}
-                <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
-            {% endfor %}
-          </ol>
-        </nav>
-
-        <div class="p-3"></div>
-    {% endif %}
-  </div>
 </div>
 
-<p class="lh-condensed text-small mb-n4 anim-fade-in">{{ page.date | date: "%b %d %Y" }}</p>
-<h1 style="border-bottom: none" class="text-white text-shadow-dark">{{ page.title }}</h1>
+<p class="lh-condensed text-small mt-6 mb-1 anim-fade-in">{{ page.date | date: "%b %d %Y" }}</p>
+<h1 class="pb-6 text-emphasized lh-condensed text-white text-shadow-dark">{{ page.title }}</h1>
 
-<!-- <div class="markdown-body"> -->
+<div class="markdown-body">
   {{content}}
-<!-- </div> -->
+</div>
 
 {% if site.post-advance-links contains page.category %}
     <nav class="pagination-container" aria-label="Pagination">
@@ -50,6 +36,17 @@ layout: page
         </div>
     </nav>
 {% endif %}
+
+{% if site.post-tags %}
+    
+    <p class="text-emphasized">Tags:</p>
+
+    {% for tag in page.tags %}
+        <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
+    {% endfor %}
+
+{% endif %}
+
 
 {% if site.related %}
     {% include related.html %}

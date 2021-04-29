@@ -1,8 +1,8 @@
 # main text of home
 name: Hi, I'm Amir!
 
-bio-header: Hello, I'm Amir! 👋🏼
-bio: I live in Amsterdam. I have a PhD in Computational Biology, and PostDoc in Statistics. I like programming and open-source stuff!
+bio-header: Hello, I'm Amir! 👋🏼 
+bio: I live in Amsterdam. I have a PhD in Computational Biology. Currently, I am a PostDoc at Tilburg University, doing statistics and other stuffs! I like science, programming, typography, and UI/UX design.
 
 # twitter summary info
 description: Amir M Abdol's Personal Website
@@ -107,7 +107,6 @@ dark-tint: dark_dimmed
 # do you want to show the "tags" inside the posts?
 show-tags: true
 
-# show-prev-next-links: false
 show-footer: false
 
 # related posts inside a post?

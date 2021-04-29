@@ -24,7 +24,7 @@ title: Tags
 
 <section>
     {% for tag in site.tags  %}
-    <h3 id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h3>
+    <h2 id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
 
     <div class="d-flex flex-column">
         {% assign pages_list = tag[1] %}
