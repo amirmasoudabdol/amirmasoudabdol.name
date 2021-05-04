@@ -1,12 +1,13 @@
-<div class="container-lg clearfix">
-  <div class="col-sm-4 col-md-4 col-lg-4 float-left pt-2 pb-2 pr-2">
 
-    <p class="h3"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></p>
+<div class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row pb-4 pt-4">
+  <div class="flex-column flex-1 pt-2 pb-2 pr-2">
 
-    <p class="text-small mt-n2 anim-fade-in">{{ post.date | date: "%b %d %Y" }}</p>
+    <div class="h2 lh-condensed"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></div>
+
+    <div class="text-small anim-fade-in">{{ post.date | date: "%b %d %Y" }}</div>
   </div>
 
-  <div class="col-sm-8 col-md-8 col-lg-8 float-right pt-2 pb-2 pr-2">
+  <div class="flex-1 pt-2 pb-2 pr-2">
     <a class="Link--secondary no-underline muted lh-sm-condensed-ultra" href="{{ site.url }}{{ post.url }}">
       {{ post.description }}
     </a>
