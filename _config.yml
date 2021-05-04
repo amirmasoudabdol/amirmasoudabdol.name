@@ -34,7 +34,7 @@ include: [keybase.txt]
 markdown: kramdown
 
 breadcrumbs: false
-post-tags: false
+post-tags: true
 
 kramdown:
   input: GFM

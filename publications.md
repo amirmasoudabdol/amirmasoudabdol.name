@@ -3,7 +3,9 @@ layout: post
 title: Publications
 ---
 
-<!-- {% include breadcrumbs.html omit_collection=true omit_title=true %} -->
+{% if site.breadcrumbs %}
+{% include breadcrumbs.html omit_collection=true omit_title=true %}
+{% endif %}
 
 
 ### Journal Articles

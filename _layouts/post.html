@@ -37,16 +37,17 @@ layout: page
     </nav>
 {% endif %}
 
-{% if site.post-tags %}
-    
-    <p class="text-emphasized">Tags:</p>
 
+{% if site.post-tags %}
+
+    <hr class="border border-dashed"/>
     {% for tag in page.tags %}
         <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
     {% endfor %}
 
 {% endif %}
 
+<div class="p-3"></div>
 
 {% if site.related %}
     {% include related.html %}
