@@ -1,9 +1,7 @@
 ---
-layout: page
+layout: post
 title: Now
 ---
-
-{% include breadcrumbs.html omit_collection=true omit_title=true %}
 
 # Now
 
