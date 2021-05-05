@@ -39,12 +39,11 @@ layout: page
 
 {% if site.post-tags %}
     
-    <p class="text-emphasized">Tags:</p>
-
-    {% for tag in page.tags %}
-        <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
-    {% endfor %}
-
+    {% if page.tags.first[0] != null %}
+        {% for tag in page.tags %}
+            <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
+        {% endfor %}
+    {% endif %}
 {% endif %}
 
 

@@ -39,12 +39,13 @@ layout: page
 
 
 {% if site.post-tags %}
-
-    <hr class="border border-dashed"/>
-    {% for tag in page.tags %}
-        <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
-    {% endfor %}
-
+    
+    {% if page.tags.first[0] != null %}
+        <hr class="border border-dashed"/>
+        {% for tag in page.tags %}
+            <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
+        {% endfor %}
+    {% endif %}
 {% endif %}
 
 <div class="p-3"></div>

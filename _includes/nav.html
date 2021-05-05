@@ -1,4 +1,4 @@
-<nav class="UnderlineNav UnderlineNav--right">
+<nav class="UnderlineNav">
     <div class="UnderlineNav-body">
         {% if page.title != "Home" %}
           <a class="UnderlineNav-item" href="{{ site.url }}/">Home</a>
@@ -39,5 +39,8 @@
         {% if site.resume == true %}
           <a class="UnderlineNav-item" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
         {% endif %}
+    </div>
+    <div class="UnderlineNav-actions">
+        <a class="btn btn-sm btn-danger" href="{{ site.url }}/donate">{% octicon heart-fill height:16 %}</a>
     </div>
 </nav>
