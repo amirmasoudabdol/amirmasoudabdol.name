@@ -52,6 +52,7 @@ kramdown:
 #   categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
+show-socials: false
 # facebook: myfacebook
 twitter: amirmasoudabdol
 # google: mygoogle
@@ -72,7 +73,7 @@ email: i@amirmasoudabdol.name
 
 authors:
     amirmasoudabdol:
-        name: Amir M. Abdol
+        name: Amir
         bio: PostDoc Researcher in Statistics, Computational Biologist, UI/UX Enthusiast, and a Machine Learner
         external-image: false
         picture: assets/images/amirmasoudabdol_profile.jpeg
@@ -127,14 +128,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-admin
-  - jekyll/scholar
   - jekyll-octicons
-
-scholar:
-  sort_by: year
-  group_by: type
-  use_raw_bibtex_entry: true
-  bibliography: publications.bib
 
 jekyll-mentions:
     base_url: https://github.com
