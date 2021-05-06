@@ -11,6 +11,7 @@ description: Amir M Abdol's Personal Website
 # better with square images
 external-image: false
 picture: assets/images/amirmasoudabdol_profile.jpeg
+logo: assets/images/favicon/favicon-32x32.png
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -24,6 +25,7 @@ url: https://amirmasoudabdol.name
 permalink: /:title/
 
 # To enable google analytics, supply your token below
+# 
 # analytics-google: 'UA-MYANALYTICS'
 
 plausible: 
@@ -93,6 +95,9 @@ about: true
 blog: true
 now: false
 publications: true
+
+minimal-navigation: true
+show-logo-instead-of-home: true
 
 # do you want to show the "read time" of the posts?
 read-time: false

@@ -1,46 +1,61 @@
 <nav class="UnderlineNav">
     <div class="UnderlineNav-body">
-        {% if page.title != "Home" %}
-          <a class="UnderlineNav-item" href="{{ site.url }}/">Home</a>
-        {% endif %}
 
-        {% if site.now == true %}
-            {% if page.title == "Home" %}
-               {% if page.title != "Now" %}
-                <a class="UnderlineNav-item" href="{{ site.url }}/now">Now</a>
+        {% if site.minimal-navigation %}
+            {% if site.show-logo-instead-of-home %}
+            <a class="UnderlineNav-item" style="padding-bottom: 0px !important; padding-left: 0px !important; border-bottom-width: 0px !important;" href="{{ site.url }}/">
+                <img src="{{ site.logo }}"></img>
+            </a>
+            {% else %}
+            <a class="UnderlineNav-item" href="{{ site.url }}/">
+                Home
+            </a>
+            {% endif %}
+            <!-- {% include breadcrumbs.html omit_collection=true omit_title=true omit_home=true %} -->
+        {% else %}
+
+            {% if page.title != "Home" %}
+              <a class="UnderlineNav-item" href="{{ site.url }}/">Home</a>
+            {% endif %}
+
+            {% if site.now == true %}
+                {% if page.title == "Home" %}
+                   {% if page.title != "Now" %}
+                    <a class="UnderlineNav-item" href="{{ site.url }}/now">Now</a>
+                    {% endif %}
                 {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if site.blog == true %}
-            {% if page.title != "Blog" %}
-              <a class="UnderlineNav-item" href="{{ site.url }}/blog">Blog</a>
+            {% if site.blog == true %}
+                {% if page.title != "Blog" %}
+                  <a class="UnderlineNav-item" href="{{ site.url }}/blog">Blog</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if site.projects == true %}
-            {% if page.title != "Projects" %}
-              <a class="UnderlineNav-item" href="{{ site.url }}/projects">Projects</a>
+            {% if site.projects == true %}
+                {% if page.title != "Projects" %}
+                  <a class="UnderlineNav-item" href="{{ site.url }}/projects">Projects</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if site.publications == true %}
-            {% if page.title != "Publications" %}
-              <a class="UnderlineNav-item" href="{{ site.url }}/publications">Publications</a>
+            {% if site.publications == true %}
+                {% if page.title != "Publications" %}
+                  <a class="UnderlineNav-item" href="{{ site.url }}/publications">Publications</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if site.about == true %}
-            {% if page.title != "About" %}
-              <a class="UnderlineNav-item" href="{{ site.url }}/about">About</a>
+            {% if site.about == true %}
+                {% if page.title != "About" %}
+                  <a class="UnderlineNav-item" href="{{ site.url }}/about">About</a>
+                {% endif %}
             {% endif %}
-        {% endif %}
 
-        {% if site.resume == true %}
-          <a class="UnderlineNav-item" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
+            {% if site.resume == true %}
+              <a class="UnderlineNav-item" href="{% if site.resume-external %}{{ site.resume-url }}{% else %}{{ site.url }}/{{ site.resume-url }}{% endif %}">Résumé</a>
+            {% endif %}
         {% endif %}
     </div>
-    <div class="UnderlineNav-actions">
-        <a class="btn btn-sm btn-danger" href="{{ site.url }}/donate">{% octicon heart-fill height:16 %}</a>
+    <div class="UnderlineNav-item">
+        <a class="color-text-danger" href="{{ site.url }}/donate">{% octicon heart-fill height:16 %}</a>
     </div>
 </nav>
