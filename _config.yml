@@ -123,11 +123,11 @@ show-author: false
 animation: true
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
+  # - jekyll-seo-tag
+  # - jekyll-gist
   - jekyll-feed
-  - jemoji
-  - jekyll-admin
+  # - jemoji
+  # - jekyll-admin
   - jekyll-octicons
 
 jekyll-mentions:
