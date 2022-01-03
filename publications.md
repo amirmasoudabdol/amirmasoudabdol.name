@@ -8,6 +8,11 @@ title: Publications
 {% endif %}
 
 
+### Preprints
+
+1. Abdol, A. M., Wicherts, J. M. (2021, September 18). Science Abstract Model Simulation Framework. PsyArXiv. [DOI](https://doi.org/10.31234/osf.io/zy29t)
+
+
 ### Journal Articles
 
 1. Abdol, A. M., Cicin-Sain, D., Kaandorp, J. A., & Crombach, A. (2017). Scatter Search Applied to the Inference of a Development Gene Network. Computation, 5(2). [DOI](https://doi.org/10.3390/computation5020022)
