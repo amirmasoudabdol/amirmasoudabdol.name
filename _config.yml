@@ -123,7 +123,7 @@ show-author: false
 animation: true
 
 plugins:
-  # - jekyll-seo-tag
+  - jekyll-seo-tag
   # - jekyll-gist
   - jekyll-feed
   # - jemoji
