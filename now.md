@@ -3,12 +3,10 @@ layout: post
 title: Now
 ---
 
-After almost three years of working on my simulation framework. I'm now focused on finalizing everything and writing up a paper about it. If everything goes well, I should have everything ready before the summer. I made a quite nice documentation website using [MkDocs](https://www.mkdocs.org) and [Material Theme](https://squidfunk.github.io/mkdocs-material/) that I reallt like. It looks good, and it has loads of content. I feel proud of it! 
+I'm out of academia, after almost 10 years! Technically, I'm not completely out as I'm still working at the University of Amsterdam, as a software developer, but I'm not a researcher anymore! I am one of the Core Developer of [JASP](https://jasp-stats.org), a statistical software that tries to rival big names like SPSS, and SAS. It's built on top of Qt framework, and I like C++, UI/UX and statistics! 🙂
 
-In the meantime, I read a couple of self-improvement books to be able to cope with this long lockdown a bit better, e.g., [Atomic Habits](https://jamesclear.com/atomic-habits) by James Clear, [The Power of Habits](https://charlesduhigg.com/the-power-of-habit/) by Charles Duhigg. And recently, I started reading the [Stuff Matters](https://www.hmhbooks.com/shop/books/Stuff-Matters/9780544483941) by Mark Miodownik which is just delightful! 👌🏼
+These days, I'm mainly working on the back-end of the app, rewriting their build system, from Qmake to CMake, and upgrading some of their outdated procedures. We just merged this massive PR that I feel very proud of: [Qt 6.2 / C++17 / CMake](https://github.com/jasp-stats/jaspResults/pull/15). I think after dealing with the backend, I'm going to focus on integrating some more tools into their development pipelines to reduce the errors, and establish some coding standards, e.g., [clang-format](https://clang.llvm.org/docs/ClangFormat.html), [clang-tidy](https://clang.llvm.org/extra/clang-tidy/),
 
-Oh, and I started brewing [Kombucha](https://en.wikipedia.org/wiki/Kombucha?wprov=sfti1)!
-
-**Updated:** Mar 28, 2021.
+**Updated:** Mar 27, 2022.
 
 <div align="right"><a style="font-size:small;" href="https://github.com/amirmasoudabdol/amirmasoudabdol.name/blob/gh-pages/now.md">Check the history of this page</a></div>
