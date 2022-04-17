@@ -52,14 +52,6 @@ kramdown:
 #   shortname: mydisqus # enter this from your disqus account
 #   categories: [] # only show disqus for posts that have these categories
 
-social:
-  name: Amir Masoud Abdol
-  links:
-    - https://twitter.com/amirmasoudabdol
-    - https://www.linkedin.com/in/amirmasoudabdol
-    - https://github.com/amirmasoudabdol
-    - https://keybase.io/amirmasoudabdol
-
 # if you don't have any of social below, comment the line
 show-socials: false
 # facebook: myfacebook
