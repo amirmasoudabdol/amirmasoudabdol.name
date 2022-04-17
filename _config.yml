@@ -54,7 +54,9 @@ kramdown:
 # if you don't have any of social below, comment the line
 show-socials: false
 # facebook: myfacebook
-twitter: amirmasoudabdol
+twitter: 
+    username: amirmasoudabdol
+    card: summary
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
