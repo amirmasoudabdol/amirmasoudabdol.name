@@ -5,7 +5,7 @@ layout: post
 category: blog
 date: 2018-05-10
 author: amirmasoudabdol
-image: /assets/posts/Spatiotemporal_Clusters.png
+image: /assets/posts/nematostella-gastrulation-twitter-summary-large-image.png
 description: I like data, colors, composition, design, and story-telling. Alternatively, I can say that I like Data Visualization. To me, data visualization is the process of designing — or extracting — a story from the data. As a good design is selective, focused — and minimal —, a good visualization is clever, simple, and discerning.
 hidden: false
 ---

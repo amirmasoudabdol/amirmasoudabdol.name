@@ -47,6 +47,14 @@ kramdown:
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
+social:
+  name: Amir Masoud Abdol
+  links:
+    - https://twitter.com/amirmasoudabdol
+    - https://www.linkedin.com/in/amirmasoudabdol
+    - https://github.com/amirmasoudabdol
+    - https://keybase.io/amirmasoudabdol
+
 # if you don't want comments in your posts, leave categories empty
 # disqus:
 #   shortname: mydisqus # enter this from your disqus account
