@@ -6,7 +6,7 @@ category: Projects
 image: /assets/projects/nimblebox/NimbleBox_Evernote_Logo.png
 logo: /assets/projects/nimblebox/logo.png
 headerImage: true
-author: amabdol
+author: amirmasoudabdol
 projects: true
 description: A minimal Windows application that I developed for taking notes and uploading it to Evernote.
 hidden: true # don't count this post in blog pagination

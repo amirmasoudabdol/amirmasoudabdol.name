@@ -6,7 +6,7 @@ category: Projects
 image: /assets/projects/sfthemes/twitter-summary-card.png
 logo: /assets/projects/sfthemes/logo.png
 headerImage: false
-author: amabdol
+author: amirmasoudabdol
 projects: true
 description: An accessible set of themes and color palettes for 'ggplot2'
 hidden: true # don't count this post in blog pagination

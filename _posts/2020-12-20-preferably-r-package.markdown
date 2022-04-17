@@ -6,7 +6,7 @@ category: Projects
 image: /assets/projects/preferably/twitter-summary-card.png
 logo: /assets/projects/preferably/logo.png
 headerImage: false
-author: amabdol
+author: amirmasoudabdol
 projects: true
 description: An accessible 'pkgdown' template
 hidden: true # don't count this post in blog pagination
