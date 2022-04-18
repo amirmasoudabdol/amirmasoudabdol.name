@@ -7,7 +7,7 @@ date: 2018-05-10
 author: amirmasoudabdol
 image: /assets/posts/nematostella-gastrulation-twitter-summary-large-image.png
 description: I like data, colors, composition, design, and story-telling. Alternatively, I can say that I like Data Visualization. To me, data visualization is the process of designing — or extracting — a story from the data. As a good design is selective, focused — and minimal —, a good visualization is clever, simple, and discerning.
-hidden: false
+hidden: true
 ---
 
 I like data, colors, composition, design, and story-telling. Alternatively, I can say that I like *Data Visualization*. To me, data visualization is the process of *designing* — or *extracting* — a story from the data. As a good design is selective, focused — and minimal —, a good visualization is clever, simple, and discerning. It often condenses a colossal dataset into bite-size visual facts; or it tells a gentle and informative story of a common statistic. Of course there are many other types and categories but I feel this definition and examples are quite descriptive.
