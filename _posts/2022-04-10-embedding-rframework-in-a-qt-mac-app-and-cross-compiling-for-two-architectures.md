@@ -7,7 +7,7 @@ author: amirmasoudabdol
 image: /assets/posts/embedding-r-framework-twitter-summary-large-image.png
 projects: false
 description: How to Bundle the R.framework with Your macOS App
-hidden: true # don't count this post in blog pagination
+hidden: false # don't count this post in blog pagination
 ---
 
 <picture><source srcset="/assets/posts/embedding-r-framework-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/posts/embedding-r-framework-light.png" width="50%" align="right" float="right"/></picture>
