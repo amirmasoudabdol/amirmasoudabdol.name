@@ -10,7 +10,7 @@ description: How to Bundle the R.framework with Your macOS App
 hidden: true # don't count this post in blog pagination
 ---
 
-<img src="/assets/posts/embedding-r-framework.png" style="float:right; width: 30%;" />
+<picture><source srcset="/assets/posts/embedding-r-framework-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/posts/embedding-r-framework-light.png" width="50%" align="right" float="right"/></picture>
 Developing for Apple platform *can be* fun if your app lives solely inside Xcode, and you only utilize standard libraries, or don't interact with any alien libraries or frameworks. In that case, there is a high chance that you have never been worried about compatibility issues, linking problems, signing struggles and the notarization*!* 
 
 However, if your software is built on top of a different GUI framework rather than UIKit, e.g., Qt Framework, and you need all sort of other libraries; then you are familiar with the pain of getting them to know each other, link together properly, and build into one coherent piece of software. Finally, you are going to prepare your App Bundle, sign it, and send it to Apple for notarization and start praying! Now, add the **`R.framework`** or any other non-standard framework to the mix, and you are very close to the definition of nightmare.[^1]
