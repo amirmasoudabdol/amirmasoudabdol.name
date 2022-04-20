@@ -6,7 +6,7 @@ category: blog
 author: amirmasoudabdol
 image: /assets/posts/embedding-r-framework-twitter-summary-large-image.png
 projects: false
-description: How to Bundle the R.framework with Your macOS App
+description: A brief summary of the process of patching, resigning and embedding the R.framework into a Mac App, and also cross compilation for the Apple Silicon
 hidden: false # don't count this post in blog pagination
 ---
 
