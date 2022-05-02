@@ -8,7 +8,7 @@ title: About Me
 
 <!-- # About Me -->
 
-I am an applied mathematician, *remotely* a computer scientist, and recently more of a [computational scientist](https://en.wikipedia.org/wiki/Computational_scientist). For my [Ph.D. thesis](https://amirmasoudabdol.name/phd), I have studied and modeled biological systems at the [Computational Science Lab](https://uva.computationalscience.nl) at the University of Amsterdam.
+I am an applied mathematician, *remotely* a computer scientist, and recently more of a [computational scientist](https://en.wikipedia.org/wiki/Computational_scientist). For my [Ph.D. thesis]({{ site.url }}/phd), I have studied and modeled biological systems at the [Computational Science Lab](https://uva.computationalscience.nl) at the University of Amsterdam.
 
 During my PostDoc at the [Department of Methodology and Statistics](https://www.tilburguniversity.edu/about/schools/socialsciences/organization/departments/methodology-statistics/) at the Tilburg University, in the Netherlands. I have utilized my interdisciplinary knowledge of complex system simulation and software engineering to design and develop a modular, flexible and extensible C++ simulator from scratch. [SAM, Science Abstract Model, simulation framework](https://sam.amirmasoudabdol.name) is designed to facilitate the process of studying researchers’ degrees of freedom and their propagative effect on meta-analytic metrics and publication bias across the entire process of performing a research.
 
