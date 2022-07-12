@@ -5,8 +5,8 @@ date: 2022-04-18
 category: blog
 author: amirmasoudabdol
 image: 
-	path: /assets/posts/embedding-r-framework-twitter-summary-large-image.png
-	alt: Embedding the R.framework into a Mac App, and cross compilation for the Apple Silicon
+  path: /assets/posts/embedding-r-framework-twitter-summary-large-image.png
+  alt: Embedding the R.framework into a Mac App, and cross compilation for the Apple Silicon
 projects: false
 description: A brief summary of the process of patching, resigning and embedding the R.framework into a Mac App, and also cross compilation for the Apple Silicon
 hidden: false # don't count this post in blog pagination
