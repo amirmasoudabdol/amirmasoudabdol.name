@@ -6,7 +6,7 @@ category: Projects
 image: /assets/projects/alice/preview.png
 logo: /assets/projects/eight/logo.png
 headerImage: false
-author: amabdol
+author: amirmasoudabdol
 projects: true
 description: This is EIGHT!
 hidden: false # don't count this post in blog pagination

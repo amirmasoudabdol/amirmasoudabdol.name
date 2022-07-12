@@ -3,15 +3,15 @@ title: "Apple Notes vs. Hyperlinks"
 layout: post
 date: 2022-7-11
 category: blog
-author: amabdol
-description: Apple Notes does not know how to process hyperlinks consistently
+author: amirmasoudabdol
+description: Apple Notes does not know how to process hyperlinks consistently. The results vary between methods, and platforms, and there is no way to correct the unwanted behavior
 image: /assets/posts/apple-notes-vs-hyperlinks-summary-large-image.png
 tags: iOS iPadOS macOS UI UX
 hidden: false # don't count this post in blog pagination
 ---
 
 
-Over the past years, [Apple Notes](https://apple.co/3qy7gqc) has transformed from a simple notepad to a full featured note-taking app. It provides a long list of useful features like Formatted Text, Support for Attachments/Photos/Videos, Folders, Smart Folders, Handwritten Notes, Quick Notes, Scribble, Secure Notes, Note Sharing, and Live Collaboration. In iOS 16, Apple Notes will have an improved Secure Notes integration, and the Quick Notes is making its way into the iPhone. Overall, Apple Notes is really starting to be a great app, and after using so many note-taking apps, e.g., , I just prefer something simple, and well-integrated for making simple notes. The cross-platform support is sublime, the Apple Pencil support and integration is unmatched. 
+Over the past years, [Apple Notes](https://apple.co/3qy7gqc) has transformed from a simple notepad to a full featured note-taking app. It provides a long list of useful features like Formatted Text, Support for Attachments/Photos/Videos, Folders, Smart Folders, Handwritten Notes, Quick Notes, Scribble, Secure Notes, Note Sharing, and Live Collaboration. In iOS 16, Apple Notes will have an improved Secure Notes integration, and the Quick Notes is making its way into the iPhone. Overall, Apple Notes is really starting to be a great app, and after using so many note-taking apps (Drafts, Agenda, GoodNotes, Notability, DEVONthink, Workflowy), I just prefer something simple, and well-integrated just to make simple notes. The cross-platform support is sublime, the Apple Pencil support and integration is unmatched. 
 
 Unfortunately though, these days, like most Apple software you start to notice inconsistencies and annoying behaviors here and there, e.g., there is no easy way to export your notes from Apple Notes. Unlike Apple Photos where you can simply export or drag/drop a photo out of the app, Apple Notes does not let you do that. Your only choice is export your entire library as a PDF, or use a third-party app which you'll never know when it stops working.
 
