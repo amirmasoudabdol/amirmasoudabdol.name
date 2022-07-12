@@ -5,7 +5,10 @@ date: 2022-7-11
 category: blog
 author: amirmasoudabdol
 description: Apple Notes does not know how to process hyperlinks consistently. The results vary between methods, and platforms, and there is no way to correct the unwanted behavior
-image: /assets/posts/apple-notes-vs-hyperlinks-summary-large-image.png
+image: 
+  path: /assets/posts/apple-notes-vs-hyperlinks-summary-large-image.png
+  alt: Apple Notes does not know how to deal with hyperlinks
+twitter-image: /assets/posts/apple-notes-vs-hyperlinks-summary-large-image.png
 tags: iOS iPadOS macOS UI UX
 hidden: false # don't count this post in blog pagination
 ---
@@ -108,11 +111,3 @@ On both macOS and iOS, Apple Notes comes with a text formatting option, and text
 Apple Notes' UI is well-suited to deal with these problems and it can offer a consistent behavior but at the moment it does not, and that is frustrating! Maybe we can just have what it has been there for years in Pages, or Mails app, and stop this madness, please!
 
 ![](/assets/posts/apple-notes-vs-hyperlinks-pages-solution.png)
-
-<!-- <picture>
-	<source srcset="/assets/posts/apple-notes-vs-hyperlinks-pages-solution.png" media="(prefers-color-scheme: dark)">
-	<img src="/assets/posts/apple-notes-vs-hyperlinks-pages-solution.png" width="50%" align="left" float="left"/>
-</picture>
-
-
- -->
