@@ -20,8 +20,8 @@ resume: false
 resume-external: true
 resume-url: 
 
+# Your URL
 url: https://amirmasoudabdol.name
-# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
@@ -40,17 +40,14 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-# To enable piwik tracking, supply your url & site ID below
-# analytics-piwik-url: 'piwik.my-host.com'
-# analytics-piwik-id: 1
-
+# Jekyll SEO Tags Attributes
 social:
   name: Amir Masoud Abdol
   links:
     - https://twitter.com/amirmasoudabdol
-    - https://www.linkedin.com/in/amirmasoudabdol
     - https://github.com/amirmasoudabdol
     - https://keybase.io/amirmasoudabdol
+    - https://www.linkedin.com/in/amirmasoudabdol
 
 # if you don't want comments in your posts, leave categories empty
 # disqus:
@@ -131,11 +128,8 @@ show-author: false
 animation: true
 
 plugins:
-  - jekyll-seo-tag
-  # - jekyll-gist
   - jekyll-feed
-  # - jemoji
-  # - jekyll-admin
+  - jekyll-seo-tag
   - jekyll-octicons
 
 jekyll-mentions:

@@ -2,57 +2,53 @@
 <html lang="en">
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
-    <meta name=viewport content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+	<meta name=viewport content="width=device-width, initial-scale=1">
 
-    <html data-color-mode="auto" data-dark-theme="{{ site.dark-tint }}">
+	<html data-color-mode="auto" data-dark-theme="{{ site.dark-tint }}">
 
-    {% seo %}
+	{% seo %}
 
-    {% include favicon.html %}
+	{% include favicon.html %}
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
+	<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
 
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/primer.css">
-
+	<link rel="stylesheet" href="{{ site.url }}/assets/css/primer.css">
 
 </head>
 <body>
 
+	<div class="container-lg clearfix pl-4 pr-4 col-12 col-md-10 col-lg-8 col-xl-6">
+
+		<div class="d-flex flex-column">
+
+		  <div class="mx-auto col-12">
+
+			{% if page.tag %}
+			<div class="p-0  bg-gray-light"></div>
+			{% else %}
+
+			{% if showHeader != true %}
+			<div class="p-0  bg-gray-light"></div>
+			{% else %}
+			<div class="p-12  bg-gray-light"></div>
+			{% endif %}
+
+			{% endif %}
 
 
-    <div class="container-lg clearfix pl-4 pr-4 col-12 col-md-10 col-lg-8 col-xl-6">
+			{{ content }}
 
-        <div class=" d-flex flex-column">
+			
+		</div>
+	</div>
+</div>
 
-          <div class="mx-auto col-12">
+{% if site.analytics-google %}
+{% include analytics-google.html %}
+{% endif %}
 
-            {% if page.tag %}
-                <div class="p-0  bg-gray-light"></div>
-            {% else %}
-
-                {% if showHeader != true %}
-                    <div class="p-0  bg-gray-light"></div>
-                {% else %}
-                    <div class="p-12  bg-gray-light"></div>
-                {% endif %}
-
-            {% endif %}
-
-
-            {{ content }}
-        </div>
-      </div>
-  </div>
-
-      {% include icons.html %}
-
-
-      {% if site.analytics-google %}
-      {% include analytics-google.html %}
-      {% endif %}
-
-  </body>
-  </html>
+</body>
+</html>
