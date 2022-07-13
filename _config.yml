@@ -31,14 +31,15 @@ permalink: /:title/
 
 include: [keybase.txt]
 
-markdown: kramdown
-
 breadcrumbs: false
 post-tags: true
 
 kramdown:
   input: GFM
   hard_wrap: false
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: false
 
 # Jekyll SEO Tags Attributes
 social:
@@ -131,6 +132,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-octicons
+  - kramdown-syntax-coderay
 
 jekyll-mentions:
     base_url: https://github.com
