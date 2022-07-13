@@ -30,18 +30,16 @@
 			<div class="p-0  bg-gray-light"></div>
 			{% else %}
 
-			{% if showHeader != true %}
-			<div class="p-0  bg-gray-light"></div>
-			{% else %}
-			<div class="p-12  bg-gray-light"></div>
-			{% endif %}
+			{% include header.html %}
 
 			{% endif %}
 
 
 			{{ content }}
 
-			
+
+			{% include footer.html %}
+
 		</div>
 	</div>
 </div>
@@ -49,6 +47,7 @@
 {% if site.analytics-google %}
 {% include analytics-google.html %}
 {% endif %}
+
 
 </body>
 </html>

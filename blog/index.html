@@ -10,8 +10,8 @@ title: Writings
 <section>
 	{% if site.posts.size == 0 %}
 		<div class="blankslate p-6">
-		  {% octicon octoface height:24 %}
-		  <h3 class="mb-1">Nothing published yet!</h3>
+			{% octicon octoface height:24 %}
+		 	<h3 class="mb-1">Nothing published yet!</h3>
 		</div>
 	{% elsif site.paginate %}
 		{% for post in paginator.posts %}

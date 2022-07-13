@@ -12,7 +12,7 @@ description: JASP Core Developer. Previously, Comp. Psychology PostDoc Tilburg U
 # better with square images
 external-image: false
 picture: /assets/images/amirmasoudabdol_profile.jpg
-logo: /assets/images/favicon/favicon-32x32.png
+logo: /assets/images/favicon/favicon.svg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).

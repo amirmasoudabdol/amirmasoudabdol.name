@@ -3,33 +3,3 @@ page.title == "Home"
 %}{% assign showHeader = true %}{% endif %}
 
 {% include nav.html %}
-
-{% if showHeader == true %}
-
-<div class="anim-fade-in mx-auto ">
-
-    <div class="pt-12 d-flex flex-column flex-md-row flex-items-left flex-md-items-left">
-
-        <div class="col-6 col-md-4 col-lg-4 col-xl-3 d-flex flex-items-left flex-items-left flex-md-items-start">
-            <img class="width-full avatar mb-2 mb-md-0" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" alt="{{ site.name }}" />
-        </div>
-
-        <div class="col-12 col-md-10 d-flex flex-column flex-justify-left flex-items-left flex-md-items-start pl-md-4">
-            <h2>{{ site.bio-header }}</h2>
-            <p class="h4 text-gray text-normal mb-2">{{ site.bio }}</p>
-
-            <div class=" d-flex flex-column">
-                <div class="p-0  bg-gray-light">
-                    {% include social-links.html %}
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-{% include footer.html %}
-
-{% endif %}
