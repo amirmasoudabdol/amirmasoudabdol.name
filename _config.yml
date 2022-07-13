@@ -1,8 +1,11 @@
 # main text of home
 name: Amir Masoud Abdol's Personal Website
 
-bio-header: Hello, I'm Amir! 👋🏼 
-bio: I live in Amsterdam and working as a Core Developer at JASP. Previously, Comp. Psychology PostDoc at Tilburg University, Comp. Biology PhD from University of Amsterdam. I am an UI/UX enthusiast, and I enjoy writing C++!
+bio-title: Hello, I'm Amir 👋🏼 
+bio-subtitle: and I am looking for a new job!
+bio-body: Computational Scientist, C++ Developer, Build System Engineer, CMake, Conan, UI/UX Enthusiast, and a Machine Learner.
+
+# Previously, JASP Core Developer, Comp. Psychology PostDoc at Tilburg University, Comp. Biology PhD from University of Amsterdam. I am an UI/UX enthusiast, and I enjoy writing C++!
 
 # twitter summary info
 tagline: Amir Masoud Abdol's Personal Website
