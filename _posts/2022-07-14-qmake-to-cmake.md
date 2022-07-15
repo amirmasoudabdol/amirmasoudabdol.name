@@ -11,6 +11,7 @@ description: A not so brief summary of the process of moving from qmake to CMake
 image:
   path: /assets/post/qmake-to-cmake-twitter-summary-card.png
   alt: Cross-compiled and cross-platform build, deployment, and dependency management (using Conan)
+twitter-image: /assets/post/qmake-to-cmake-twitter-summary-card.png
 ---
 
 In this article, I will talk you through the process of rewriting JASP’s build system from scratch using CMake. It's a long journey of moving the entire build and deployment process from [qmake](https://doc.qt.io/qt-6/qmake-manual.html) to [CMake](https://cmake.org). In addition, I will discuss how we have used CMake to work with R framework, and how we have used Conan to manage our dependencies in order to achieve a robust cross-platform, multi-architecture build, and deployment. 
