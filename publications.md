@@ -10,7 +10,7 @@ title: Publications
 
 ### Preprints
 
-1. Abdol, A. M., Wicherts, J. M. (2021, September 18). Science Abstract Model Simulation Framework. PsyArXiv. [DOI](https://doi.org/10.31234/osf.io/zy29t)
+1. Abdol, A. M., Wicherts, J. M. (2021, September 18). [Science Abstract Model Simulation Framework](https://sam.amirmasoudabdol.name). PsyArXiv. [DOI](https://doi.org/10.31234/osf.io/zy29t)
 
 
 ### Journal Articles
