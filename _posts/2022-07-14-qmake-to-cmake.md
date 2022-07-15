@@ -627,12 +627,11 @@ install(
   )
 ```
 
-
-### Caveats
+### {% octicon alert height:24 class:"color-fg-danger"%} Caveats 
 
 As mentioned before, due to the requirements of JASP project, we had to deal with several type of dependencies. Some managed by Conan, others fetched using the `FetchContent`, and the rest were downloaded directly from their repository. I have to emphasize that this is not an ideal scenario, and you should avoid it if you can. You should try to manage all your dependencies with one dependency manager. In our case, we could have improved our setup by writing a Conan recipe for ReadStat, and let Conan handle its build as well. However, we could have not moved everything to Conan, e.g., R Framework and JAGS (due to its FORTRAN dependency). 
 
-I addition, I should reiterate the fact that, *ideally* you should not interact with Conan within your CMake files, and educate your team to use Conan command line instead. However, in our case, due to time pressure and because the team was not familiar with Conan, I decided to manage some of the Conan parameters with CMake. This is not ideal because you risk replying on deprecated Conan features' as Conan evolves.[^7] In our case, I have made a note/task of this fact and encouraged the team to deprecate the `Conan.cmake` module, study Conan, and setup their environment manually for each build.
+Additionally, I should reiterate the fact that, *ideally* you should not interact with Conan within your CMake files, and educate your team to use Conan command line instead. However, in our case, due to time pressure and because the team was not familiar with Conan, I decided to manage some of the Conan parameters with CMake. This is not ideal because you risk replying on deprecated Conan features' as Conan evolves.[^7] In our case, I have made a note/task of this fact and encouraged the team to deprecate the `Conan.cmake` module, study Conan, and setup their environment manually for each build.
 
 ## Summary
 
