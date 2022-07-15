@@ -35,12 +35,15 @@ permalink: /:title/
 include: [keybase.txt]
 
 breadcrumbs: false
-post-tags: true
+show-post-tags: true
+
+markdown: kramdown
+highligher: rouge
 
 kramdown:
   input: GFM
   hard_wrap: false
-  syntax_highlighter: coderay
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     line_numbers: false
 
@@ -113,9 +116,6 @@ show-logo-instead-of-home: false
 read-time: false
 
 dark-tint: dark_dimmed
-
-# do you want to show the "tags" inside the posts?
-show-tags: true
 
 show-footer: false
 

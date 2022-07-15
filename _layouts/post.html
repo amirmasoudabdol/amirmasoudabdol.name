@@ -17,6 +17,9 @@ layout: page
 
 <p class="lh-condensed text-small mt-6 mb-1 anim-fade-in">{{ page.date | date: "%b %d %Y" }}</p>
 <h1 class="pb-6 text-emphasized lh-condensed text-white text-shadow-dark">{{ page.title }}</h1>
+{% if page.subtitle %}
+    <h4 class="mt-n6 pb-6 pt-2 lh-condensed text-light text-shadow-dark">{{ page.subtitle }}</h4>
+{% endif %}
 
 <div class="markdown-body">
   {{content}}
@@ -38,14 +41,13 @@ layout: page
 {% endif %}
 
 
-{% if site.post-tags %}
+{% if site.show-post-tags %}
     
-    {% if page.tags.first[0] != null %}
-        <hr class="border border-dashed"/>
-        {% for tag in page.tags %}
-            <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
-        {% endfor %}
-    {% endif %}
+    <hr class="border border-dashed"/>
+    {% for tag in page.tags %}
+        <span class="Label"><a href="{{ site.url }}/tags/#{{ tag | slugify }}">{{ tag }}</a></span>
+    {% endfor %}
+
 {% endif %}
 
 <div class="p-3"></div>
