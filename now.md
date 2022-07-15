@@ -3,12 +3,14 @@ layout: post
 title: Now
 ---
 
-I'm out of academia, after almost a decade! I mean, technically, I'm not; since I'm still working at the University of Amsterdam, as a software developer! I am one of the Core Developer of [JASP](https://jasp-stats.org), a statistical software that tries to rival big names like SPSS, and SAS. It's built on top of Qt framework, R.[^1]
+I can *finally* say that I'm out of academia, after almost a decade!
 
-These days, I'm mainly working on the back-end of the app, rewriting their build system, from Qmake to CMake, and upgrading some of their outdated procedures. We just merged this massive PR that I feel very proud of: [Qt 6.2 / C++17 / CMake](https://github.com/jasp-stats/jaspResults/pull/15). I think after dealing with the backend, I'm going to focus on integrating some more tools into their development pipelines to reduce the errors, and establish some coding standards, e.g., [clang-format](https://clang.llvm.org/docs/ClangFormat.html), [clang-tidy](https://clang.llvm.org/extra/clang-tidy/).
+These days, I'm casually looking for a job while at the same time trying to write a bit more, see [here]({% post_url 2022-04-10-embedding-rframework-in-a-qt-mac-app-and-cross-compiling-for-two-architectures %}) and [here]({% post_url 2022-07-14-qmake-to-cmake %}). In the meantime, I am also working on a few projects, and trying to catch up with some of the technologies. I'm reading about [Functional Programming](https://www.manning.com/books/functional-programming-in-c-plus-plus) and [Concurrency](https://dl.acm.org/doi/book/10.1145/3335772). At the same time, I'm working on a few RStats related project! 👀 
 
-**Updated:** May 2nd, 2022.
+P.S. I'm trying to get my driving license! 🚗🤞🏼
 
-[^1]: I will be stop working at JASP by the end of May 2022.
+**Updated:** July 15th, 2022.
+
+
 
 <div align="right"><a style="font-size:small;" href="https://github.com/amirmasoudabdol/amirmasoudabdol.name/blob/gh-pages/now.md">Check the history of this page</a></div>
