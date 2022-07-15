@@ -10,6 +10,7 @@ image:
 projects: false
 description: A brief summary of the process of patching, resigning and embedding the R.framework into a Mac App, and also cross compilation for the Apple Silicon
 hidden: false # don't count this post in blog pagination
+tags: C Cpp R Rstats macOS Notarization
 ---
 
 <picture><source srcset="/assets/posts/embedding-r-framework-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/posts/embedding-r-framework-light.png" width="50%" align="right" float="right"/></picture>
