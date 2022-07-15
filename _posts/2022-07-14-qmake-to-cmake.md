@@ -13,7 +13,7 @@ image:
   alt: Cross-compiled and cross-platform build, deployment, and dependency management (using Conan)
 ---
 
-In this article, I will walk you through the process of rewriting JASP’s build system from scratch using CMake. It's a long journey of moving the entire build and deployment process from [qmake](https://doc.qt.io/qt-6/qmake-manual.html) to [CMake](https://cmake.org). In addition, I will discuss how we have used CMake to work with R framework, and how we have used Conan to manage our dependencies in order to achieve a robust cross-platform, multi-architecture build, and deployment. 
+In this article, I will walk you through the process of rewriting JASP’s build system from scratch using CMake. It is a long journey of moving the entire build and deployment process from [qmake](https://doc.qt.io/qt-6/qmake-manual.html) to [CMake](https://cmake.org). In addition, I will discuss how we have used CMake to work with R framework, and how we have used Conan to manage our dependencies in order to achieve a robust cross-platform, multi-architecture build, and deployment. 
 
 While this writing is very much focused on JASP project, and it might not directly apply to your project, I hope you can find bits and pieces of if helpful when you decide to go through the same process in your project. I should mention that I will not be covering every aspects of the software or the build process equally.
 
@@ -23,7 +23,7 @@ JASP is an open-source alternative to SPSS, SAS, and other lookalikes. It is bui
 
 `JASPEngine` runs as a separate process alongside JASP, and uses `libR-Interface` ≅ `R` + `RInside` + `Rcpp` to run the R analyses and commands, and ultimately retrieve their results. The `libR-Interface` is a library developed by JASP Team. It encapsulates an interface to R, as well as some logic on how the two apps needs to communicate to each other.
 
-> I'm not intending to describe the entire architecture of JASP. My goal is to provide a high level overview of its architecture and components in order for you to be able to observe its complexity and hopefully find similar situations or solutions to/for your project.
+> I am not intending to describe the entire architecture of JASP. My goal is to provide a high level overview of its architecture and components in order for you to be able to observe its complexity and hopefully find similar situations or solutions to/for your project.
 
 <picture>
   <source srcset="/assets/posts/qmake-to-cmake-jasp-arch-dark.png" media="(prefers-color-scheme: dark)">
@@ -50,7 +50,7 @@ In both systems, I use CMake to glue everything together, more on this later.
 
 R packages that are necessary to the function of JASP needs to be installed inside the R Framework and shipped within the final binary.[^4] Some of the R packages like [RInside](http://dirk.eddelbuettel.com/code/rinside.html) and [Rcpp](https://www.rcpp.org) are needed during the build, as they need to be linked against the `libR-Interface` and consequently `JASPEngine`; as a results they need to be treated differently. More on this later.
 
-JASP modules are basically extended R packages with some QML files that are being used by JASP to construct the graphic user interface for each module, i.e., all those controls and checkboxes. In addition, they know how to prepare, and pass their results back to JASP. These modules need to be installed and shipped within the final binary, and they don't necessary need to be available during the build.
+JASP modules are basically extended R packages with some QML files that are being used by JASP to construct the graphic user interface for each module, i.e., all those controls and checkboxes. In addition, they know how to prepare, and pass their results back to JASP. These modules need to be installed and shipped within the final binary, and they do not necessary need to be available during the build.
 
 The process of installing both the R packages and JASP modules are being handled by CMake either during the configuration or at the build step, more on this later.
 
@@ -104,7 +104,7 @@ As you can see, JASP consists of several sub-projects. In addition to the follow
 - **Engine**, which compiles into `JASPEngine` executable
 - and **Desktop**, which is the main GUI of the app, and it mainly consists of Qt codes
 
-Below you can see some of the main interactions and dependencies between all the entities of the project. I didn't go into full length to describe whether the libraries are linked statically or dynamically; however, in general, 
+Below you can see some of the main interactions and dependencies between all the entities of the project. I did not go into full length to describe whether the libraries are linked statically or dynamically; however, in general, 
 
 - **on macOS** most libraries are linked statically except a few dependencies and Qt itself.
 - **on Windows** most libraries are linked dynamically except `libCommon` and few other exceptions (if I recall correctly)
@@ -233,7 +233,7 @@ execute_process(
       --file=${MODULES_RENV_ROOT_PATH}/install-RInside.R)
 ```
 
-> {% octicon alert height:24 class:"color-fg-attention"%} I'm omitting a lot of details here; especially when it comes to how R packages installation works. As far as CMake concerns, you need to execute a process to call the `${R_EXECUTABLE}` and make sure that it can install your requested package.
+> {% octicon alert height:24 class:"color-fg-attention"%} I am omitting a lot of details here; especially when it comes to how R packages installation works. As far as CMake concerns, you need to execute a process to call the `${R_EXECUTABLE}` and make sure that it can install your requested package.
 
 ##### On Linux
 
@@ -308,7 +308,7 @@ endif()
 
 Integrating Conan is often as simple as this. If you make sure that you are selecting the right libraries, and setting the right flags for your `conan install ..`, you can simply use `find_package` command to link your Conan libraries to your project. 
 
-Notice that I've used two generators in the Conan file, `cmake_paths` and `cmake_find_package`. This is because some of those libraries are not properly set up to work with CMake projects, and therefore I need to use Conan environment variables to tap into their header or libraries folders. In addition, as we see later on during the Windows build, I needed a more fine-grained control over which libraries to select, so this was necessary.
+Notice that I have used two generators in the Conan file, `cmake_paths` and `cmake_find_package`. This is because some of those libraries are not properly set up to work with CMake projects, and therefore I need to use Conan environment variables to tap into their header or libraries folders. In addition, as we see later on during the Windows build, I needed a more fine-grained control over which libraries to select, so this was necessary.
 
 #### Misc./Problematic Libraries
 
@@ -488,7 +488,7 @@ endif()
   - [`Desktop/CMakeLists.txt`](https://github.com/jasp-stats/jasp-desktop/blob/v0.16.2/Desktop/CMakeLists.txt)
 - The third part, **Installation and Packing**, mocks the install process, deploys the project and prepares the it for the creation of the [WIX Installer](https://wixtoolset.org) or an [App Bundle](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/BundleTypes/BundleTypes.html) on macOS.
 
-If you know the basic of CMake, you can see that nothing mysterious is happening in those `CMakeLists.txt` files; except maybe how some of those dependencies have been handled. There, I have utilized the [`cmake-generator-expressions`](https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html) to link the appropriate libraries based on what's available where on different systems and/or different configurations. E.g., you can see below that `$<$<BOOL:${USE_CONAN}>:jsoncpp::jsoncpp>` instructs CMake to use `jsoncpp::jsoncpp` target if Conan has been used, i.e., on Windows and macOS; however, on Linux where we rely on system libraries, we use PkgConfig's variables to access the header files, and link to libraries, `$<$<PLATFORM_ID:Linux>:${_PKGCONFIG_LIB_JSONCPP_INCLUDEDIR}>`. 
+If you know the basic of CMake, you can see that nothing mysterious is happening in those `CMakeLists.txt` files; except maybe how some of those dependencies have been handled. There, I have utilized the [`cmake-generator-expressions`](https://cmake.org/cmake/help/latest/manual/cmake-generator-expressions.7.html) to link the appropriate libraries based on what is available where on different systems and/or different configurations. E.g., you can see below that `$<$<BOOL:${USE_CONAN}>:jsoncpp::jsoncpp>` instructs CMake to use `jsoncpp::jsoncpp` target if Conan has been used, i.e., on Windows and macOS; however, on Linux where we rely on system libraries, we use PkgConfig's variables to access the header files, and link to libraries, `$<$<PLATFORM_ID:Linux>:${_PKGCONFIG_LIB_JSONCPP_INCLUDEDIR}>`. 
 
 ```cmake
 target_include_directories(
@@ -577,9 +577,9 @@ else()
 endif()
 ```
 
-It's worth noting that there is a lot of detailed involved in here, and if you are interested you should study the `R-Interface/CMakeLists.txt`, `Programs.Cmake` and the main `CMakeLists.txt` file. One of the complication that we faced was the fact that `libR-Interface.dll` needs to be linked against Boost, and it could not be linked against the Boost that was already prepared by Conan for the main project using MSVC. Instead, it needed to be linked against a Boost that is build inside the MSYS (i.e., Rtools42) environment. Therefore, we had to make sure that Boost (and jsoncpp) is available inside the MSYS system. Since Rtools42 is a full-featured MSYS environment, we can achieve this by installing those packages using `pacman`. After that, we only had to make sure that a copy of all those libraries sit next to the `JASP` executable because Windows. So, some manual (via CMake's `file` command) copy/paste of libraries were needed.
+It is worth noting that there is a lot of detailed involved in here, and if you are interested you should study the `R-Interface/CMakeLists.txt`, `Programs.Cmake` and the main `CMakeLists.txt` file. One of the complication that we faced was the fact that `libR-Interface.dll` needs to be linked against Boost, and it could not be linked against the Boost that was already prepared by Conan for the main project using MSVC. Instead, it needed to be linked against a Boost that is build inside the MSYS (i.e., Rtools42) environment. Therefore, we had to make sure that Boost (and jsoncpp) is available inside the MSYS system. Since Rtools42 is a full-featured MSYS environment, we can achieve this by installing those packages using `pacman`. After that, we only had to make sure that a copy of all those libraries sit next to the `JASP` executable because Windows. So, some manual (via CMake's `file` command) copy/paste of libraries were needed.
 
-> {% octicon alert height:24 class:"color-fg-attention"%} I've mentioned Rtools42, but at the time that we implemented this method, R 4.0 was not released yet. Therefore, we had to use the combination of Rtool35 and MSYS to achieve a complete build. Most links to CMake files in this article are pointing to [`tags/0.16.2`](https://github.com/jasp-stats/jasp-desktop/tree/v0.16.2). If you are interested on how Rtools42 has simplified this process, you can study this pull request, [Support for R-4.2.0](https://github.com/jasp-stats/jasp-desktop/pull/4763). In this RP, I have replaced the MSYS environment with Rtools42. (The PR is closed, however, it's content is merged into this [pull request](https://github.com/jasp-stats/jasp-desktop/pull/4801).)
+> {% octicon alert height:24 class:"color-fg-attention"%} I have mentioned Rtools42, but at the time that we implemented this method, R 4.0 was not released yet. Therefore, we had to use the combination of Rtool35 and MSYS to achieve a complete build. Most links to CMake files in this article are pointing to [`tags/0.16.2`](https://github.com/jasp-stats/jasp-desktop/tree/v0.16.2). If you are interested on how Rtools42 has simplified this process, you can study this pull request, [Support for R-4.2.0](https://github.com/jasp-stats/jasp-desktop/pull/4763). In this RP, I have replaced the MSYS environment with Rtools42. (The PR is closed, however, it is content is merged into this [pull request](https://github.com/jasp-stats/jasp-desktop/pull/4801).)
 
 ### Build
 
