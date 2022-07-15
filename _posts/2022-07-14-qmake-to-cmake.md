@@ -627,7 +627,14 @@ install(
   )
 ```
 
-## Conclusion
+
+### Caveats
+
+As mentioned before, due to the requirements of JASP project, we had to deal with several type of dependencies. Some managed by Conan, others fetched using the `FetchContent`, and the rest were downloaded directly from their repository. I have to emphasize that this is not an ideal scenario, and you should avoid it if you can. You should try to manage all your dependencies with one dependency manager. In our case, we could have improved our setup by writing a Conan recipe for ReadStat, and let Conan handle its build as well. However, we could have not moved everything to Conan, e.g., R Framework and JAGS (due to its FORTRAN dependency). 
+
+I addition, I should reiterate the fact that, *ideally* you should not interact with Conan within your CMake files, and educate your team to use Conan command line instead. However, in our case, due to time pressure and because the team was not familiar with Conan, I decided to manage some of the Conan parameters with CMake. This is not ideal because you risk replying on deprecated Conan features' as Conan evolves.[^7] In our case, I have made a note/task of this fact and encouraged the team to deprecate the `Conan.cmake` module, study Conan, and setup their environment manually for each build.
+
+## Summary
 
 CMake offers a lot more freedom compared to qmake. I am aware that CMake is not everyone's cup of tea and many people do not like it. However, I feel if you have tried CMake before and had similar experience, you need to give it another try. A lot has changed from early days, and large and complicated projects like Qt or KDE heavily rely on it. In Modern CMake[^5], you have much more control over your targets, and libraries. CPack, although not perfect, can facilitate your deployment greatly if you have a relatively standard project. Finally, dependency managers like Conan are improving the CMake integration every day, and can generate CMake config files for packages that do not come with CMake support of the box.[^6] 
 
@@ -642,3 +649,4 @@ I should also reiterate that most of what I have discussed might not directly ap
 [^4]: Most of the R packages are being installed via [Renv](https://rstudio.github.io/renv/articles/renv.html).
 [^5]: I highly recommend [Professional CMake: A Practical Guide](https://crascit.com/professional-cmake/) book by Craig Scott. I personally have learned a lot from it. You can often find him answering some question on [CMake Discourse](https://discourse.cmake.org) as well.
 [^6]: The quality of the config file you get out of Conan depends on the quality of the Conan script but in general, chances are high that you get a good, and working config file, so that you can simply use the target, e.g., `jsoncpp::jsoncpp`.
+[^7]: [Conan 2.0](https://docs.conan.io/en/latest/conan_v2.html)
