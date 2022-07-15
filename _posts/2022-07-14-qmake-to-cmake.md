@@ -7,7 +7,7 @@ category: blog
 author: amirmasoudabdol
 headerImage: false
 tags: CMake Qt6 QtDev C Cpp qmake R Rstats
-description: A not so brief summary of the process of moving from qmake to CMake, and how do manage cross-compiled and cross-platform build, deployment, and depdendencies (using Conan)
+description: A not so brief summary of the process of moving from qmake to CMake, and how to manage cross-compiled and cross-platform build, deployment, and depdendencies (using Conan)
 image:
   path: /assets/posts/qmake-to-cmake-twitter-summary-card.png
   alt: Cross-compiled and cross-platform build, deployment, and dependency management (using Conan)
