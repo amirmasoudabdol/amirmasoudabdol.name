@@ -13,7 +13,7 @@ image:
   alt: Cross-compiled and cross-platform build, deployment, and dependency management (using Conan)
 ---
 
-In this article, I will talk you through the process of rewriting JASP’s build system from scratch using CMake. It's a long journey of moving the entire build and deployment process from [qmake](https://doc.qt.io/qt-6/qmake-manual.html) to [CMake](https://cmake.org). In addition, I will discuss how we have used CMake to work with R framework, and how we have used Conan to manage our dependencies in order to achieve a robust cross-platform, multi-architecture build, and deployment. 
+In this article, I will walk you through the process of rewriting JASP’s build system from scratch using CMake. It's a long journey of moving the entire build and deployment process from [qmake](https://doc.qt.io/qt-6/qmake-manual.html) to [CMake](https://cmake.org). In addition, I will discuss how we have used CMake to work with R framework, and how we have used Conan to manage our dependencies in order to achieve a robust cross-platform, multi-architecture build, and deployment. 
 
 While this writing is very much focused on JASP project, and it might not directly apply to your project, I hope you can find bits and pieces of if helpful when you decide to go through the same process in your project. I should mention that I will not be covering every aspects of the software or the build process equally.
 
