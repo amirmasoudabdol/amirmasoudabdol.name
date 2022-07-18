@@ -11,10 +11,11 @@ image:
   alt: Toward Reverse Engineering Spatiotemporal Gene Regulatory Networks of Nematostella Vectensis
 ---
 
-Abstract:
+
+#### Abstract
 
 > Over the last decade, the sea anemone *Nematostella vectensis* has become a popular model to study bilaterian evolution, development and more recently also regeneration. Understanding genetic interactions during the early development of *N. vectensis* is the first step toward unveiling the details of its early developmental processes, e.g., polarization, the formation of the *blastula* and initiation of the *gastrulation* process. Furthermore, the collective knowledge of gene interactions allows researchers to speculate about possible *Gene Regulatory Networks* (GRNs) governing each process. The knowledge of gene interactions also provides an opportunity to reverse engineer gene interactions in a GRN model which potentially leads to detailed understanding of the early developmental processes, e.g., pattern formation and the mechanics of gastrulation. There is still a limited amount of knowledge available regarding *N. vectensis* gene interactions and possible GRNs involved in each developmental process. This thesis introduces a method for extracting spatial gene expression profiles from *in situ* hybridization images of *N. vectensis* embryo. My collaborators and I have introduced a systematic procedure to combine and process the available data from different sources (e.g., *in situ* and *qPCR*) in order to understand gene interactions and reconstruct testable hypotheses for GRNs controlling development.
 
-<img src="/assets/projects/PhD_Cover.png" width="100%"/>
+<img src="/assets/projects/PhD_Cover.png"/>
 
 -  A. M. Abdol. Toward Reverse Engineering Spatiotemporal Gene Regulatory Networks of Nematostella Vectensis. Supervised by P. M. A. Sloot and J. A. Kaandorp. ISBN: 9789402810110. [UvA-Dare](https://hdl.handle.net/11245.1/b0077baa-217d-43f2-920e-6d602fa3a07d)
