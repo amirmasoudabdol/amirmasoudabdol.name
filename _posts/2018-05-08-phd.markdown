@@ -8,6 +8,9 @@ author: amirmasoudabdol
 date: 2018-05-08 00:00
 headerImage: false
 tag: new
+image:
+  url: /assets/projects/PhD_Cover_twitter-summary-card.png
+  alt: Toward Reverse Engineering Spatiotemporal Gene Regulatory Networks of Nematostella Vectensis
 ---
 
 ![](/assets/projects/PhD_Cover.png){: class="bigger-image"}
