@@ -109,7 +109,10 @@ Below you can see some of the main interactions and dependencies between all the
 - **on macOS** most libraries are linked statically except a few dependencies and Qt itself.
 - **on Windows** most libraries are linked dynamically except `libCommon` and few other exceptions (if I recall correctly)
 
-![](/assets/posts/qmake-to-cmake-jasp-dependencies.png)
+<picture>
+  <source srcset="/assets/posts/qmake-to-cmake-jasp-dependencies-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="/assets/posts/qmake-to-cmake-jasp-dependencies-light.png"  width="100%"/>
+</picture>
 <figcaption class="caption text-small">JASP's Dependency Graph</figcaption>
 
 ### Dependencies 
