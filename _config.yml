@@ -117,7 +117,7 @@ read-time: false
 
 dark-tint: dark_dimmed
 
-show-footer: false
+show-footer: true
 
 # related posts inside a post?
 related: false
