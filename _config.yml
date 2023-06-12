@@ -55,6 +55,7 @@ social:
     - https://github.com/amirmasoudabdol
     - https://keybase.io/amirmasoudabdol
     - https://www.linkedin.com/in/amirmasoudabdol
+    - https://mastodon.social/@amirmasoudabdol
 
 # if you don't want comments in your posts, leave categories empty
 # disqus:
@@ -67,6 +68,7 @@ show-socials: false
 twitter: 
     username: amirmasoudabdol
     card: summary_large_image
+mastodon: amirmasoudabdol
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
