@@ -68,7 +68,8 @@ show-socials: false
 # twitter:
 #     username: amirmasoudabdol
 #     card: summary_large_image
-mastodon: amirmasoudabdol
+mastodon:
+  username: amirmasoudabdol
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
