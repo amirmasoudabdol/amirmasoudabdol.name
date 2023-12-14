@@ -65,9 +65,9 @@ social:
 # if you don't have any of social below, comment the line
 show-socials: false
 # facebook: myfacebook
-twitter: 
-    username: amirmasoudabdol
-    card: summary_large_image
+# twitter:
+#     username: amirmasoudabdol
+#     card: summary_large_image
 mastodon: amirmasoudabdol
 # google: mygoogle
 # instagram: myinstagram
@@ -91,7 +91,7 @@ authors:
         bio: JASP Core Developer. Previously, Comp. Psychology PostDoc Tilburg Uni., Comp. Biology PhD UvA
         external-image: false
         picture: assets/images/amirmasoudabdol_profile.jpg
-        twitter: amirmasoudabdol
+        # twitter: amirmasoudabdol
     
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
